@@ -1,0 +1,13 @@
+{
+  "consumer_name": "Rajesh Kumar",
+  "consumer_number": "1234567890",
+  "meter_number": "MET987654",
+  "billing_period": "01-11-2024 to 30-11-2024",
+  "previous_reading_date": "01-11-2024",
+  "current_reading_date": "30-11-2024",
+  "units_consumed": "250",
+  "bill_amount": "1850.50",
+  "due_date": "15-12-2024",
+  "address": "123 Main Street, Mumbai, Maharashtra 400001",
+  "discom": "MSEDCL"
+}

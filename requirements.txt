@@ -1,0 +1,15 @@
+# OCR & Vision
+google-cloud-vision==3.7.0
+
+# LLM
+openai==1.12.0
+
+# Image Processing
+opencv-python-headless==4.9.0.80
+numpy==1.26.4
+
+# PDF Processing
+pdf2image==1.17.0
+
+# Utilities
+python-dotenv==1.0.1
