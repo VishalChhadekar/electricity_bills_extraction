@@ -1,0 +1,282 @@
+================================================================================
+LLM PROMPT SENT TO OPENAI
+================================================================================
+
+Model: gpt-4o-mini
+Temperature: 0
+Response Format: JSON
+Timestamp: 2025-12-19T00:31:21.308416
+--------------------------------------------------------------------------------
+
+SYSTEM MESSAGE:
+--------------------------------------------------------------------------------
+You are a precise data extraction assistant. Extract only what is explicitly present in the text. Return valid JSON only.
+
+--------------------------------------------------------------------------------
+
+USER PROMPT:
+--------------------------------------------------------------------------------
+You are an expert at extracting structured data from Indian electricity bills.
+
+IMPORTANT INSTRUCTIONS:
+1. Extract fields EXACTLY as they appear in the OCR text
+2. If a field is missing or unclear, return null
+3. Do NOT guess or infer values
+4. Pay attention to common label variations across different states
+5. Return ONLY valid JSON matching the schema
+
+---
+EXAMPLE 1 - Rajasthan Bill:
+---
+OCR Text:
+AJMER VIDYUT VITRAN NIGAM LTD
+Invoice No: 12022203035729
+Consumer Name: RAJESH KUMAR
+Consumer No: 0802/0037
+Meter No: 4943282
+Billing Period: May/2024
+Previous Reading Date: 30-03-2024
+Current Reading Date: 30-04-2024
+Units Consumed: 753
+Total Amount: Rs. 5600.00
+Due Date: 22-05-2024
+
+Correct Extraction:
+{
+  "invoice_number": "12022203035729",
+  "consumer_name": "RAJESH KUMAR",
+  "consumer_number": "0802/0037",
+  "meter_number": "4943282",
+  "billing_period": "May/2024",
+  "previous_reading_date": "30-03-2024",
+  "current_reading_date": "30-04-2024",
+  "units_consumed": "753",
+  "bill_amount": "5600.00",
+  "due_date": "22-05-2024",
+  "address": null,
+  "discom": "AJMER VIDYUT VITRAN NIGAM LTD"
+}
+
+---
+EXAMPLE 2 - Maharashtra Bill:
+---
+OCR Text:
+MSEDCL - Maharashtra State Electricity Distribution Co Ltd
+Bill Number: 000002436874795
+Account Number: 000002436874795
+Meter Serial No: 06507161895
+Bill Month: MAY-24
+Last Reading: 11-APR-24
+Current Reading: 11-MAY-24
+Consumption: 486 Units
+Bill Amount: 3250
+Payment Due: 25-MAY-24
+
+Correct Extraction:
+{
+  "invoice_number": "000002436874795",
+  "consumer_name": null,
+  "consumer_number": "000002436874795",
+  "meter_number": "06507161895",
+  "billing_period": "MAY-24",
+  "previous_reading_date": "11-APR-24",
+  "current_reading_date": "11-MAY-24",
+  "units_consumed": "486",
+  "bill_amount": "3250",
+  "due_date": "25-MAY-24",
+  "address": null,
+  "discom": "MSEDCL"
+}
+
+---
+FIELD DESCRIPTIONS & COMMON LABELS:
+---
+
+1. invoice_number: Bill/Invoice number (unique identifier for the bill)
+   Common labels: "Invoice No", "Bill No", "Bill Number", "Invoice Number", "बिल संख्या", "Receipt No"
+   
+2. consumer_name: Full name of the electricity consumer
+   Common labels: "Consumer Name", "Name", "Customer Name", "उपभोक्ता का नाम"
+   
+3. consumer_number: Consumer/Account/Customer number (alphanumeric, may include slashes or hyphens)
+   Common labels: "Consumer No", "Account No", "Customer No", "CA No", "Consumer Number", "खाता संख्या"
+   
+4. meter_number: Electricity meter serial number (usually 6-10 digits, may have prefix)
+   Common labels: "Meter No", "Meter Number", "Meter Serial No", "MTR NO", "मीटर नंबर", "Meter S.No"
+   
+5. billing_period: Billing period or bill month
+   Common labels: "Billing Period", "Bill Month", "Period", "Bill For", "बिलिंग अवधि"
+   
+6. previous_reading_date: Date of previous/last meter reading
+   Common labels: "Previous Reading Date", "Last Reading", "Prev Reading", "पिछली रीडिंग", "Previous Date"
+   Formats: DD-MM-YYYY, DD/MM/YYYY, DD-MMM-YY, DD.MM.YYYY
+   
+7. current_reading_date: Date of current/present meter reading
+   Common labels: "Current Reading Date", "Present Reading", "Reading Date", "वर्तमान रीडिंग", "Current Date"
+   Formats: DD-MM-YYYY, DD/MM/YYYY, DD-MMM-YY, DD.MM.YYYY
+   
+8. units_consumed: Total electricity units consumed (number, may have decimals)
+   Common labels: "Units Consumed", "Consumption", "Total Units", "Energy Consumed", "खपत इकाइयाँ", "kWh"
+   
+9. bill_amount: Total bill amount (number, extract without currency symbol)
+   Common labels: "Total Amount", "Bill Amount", "Amount Payable", "Net Amount", "कुल राशि", "Total"
+   
+10. due_date: Payment due date
+    Common labels: "Due Date", "Payment Due Date", "Last Date", "Pay By", "भुगतान तिथि"
+    Formats: DD-MM-YYYY, DD/MM/YYYY, DD-MMM-YY
+   
+11. address: Consumer's address (full address if available)
+    Common labels: "Address", "Consumer Address", "पता", "Service Address"
+    
+12. discom: Distribution company name (electricity board/company)
+    Common labels: Usually appears at top of bill as company name
+    Examples: "MSEDCL", "BESCOM", "TPCODL", "AJMER VIDYUT VITRAN NIGAM LTD"
+
+---
+NOW EXTRACT FROM THIS BILL:
+---
+
+OCR Text:
+Address :SURVEY NO.443 & 437 (LOD 1066/2 & 1061/3), VILL.:-BAVLA,
+TA.:-BAVLA, DIST.:-AHMEDABAD -382220
+City: BAVLA
+E-mail: gor.shailesh@yahoo.in
+Mobile No : 9825151615
+GST IN:24ADBFS5254J1ZO
+Consumer No
+Reading Date
+Bill Date
+15-04-2024
+Due Amount in (INR) 915814.27
+Due Date
+25-04-2024
+Meter No
+Meter Make
+Consumer Type
+Connection Date
+Tarrif
+34970
+5A005581
+SECURE
+17-07-2021
+HTP-I
+Contract Demand
+85% Contract Demand
+Actual Max. Demand
+Excess Cont. Demand
+Billing Demand
+Bank Guarantee
+375.000
+318.750
+206.000
+0.000
+319.000
+0.00
+SD Cash
+1905888.00
+Recoverable SD
+Seasonal Status
+0.00
+ED Exemption upto
+01-01-1970
+Meter Status
+NORMAL
+CURRENT READING
+TOTAL CONSUMPTION UNIT
+SUMMARY OF CHARGES
+KWH
+KVAH
+KVARH
+718264 KWH
+725953 KVAH
+105850.000
+107800.000
+1
+Demand Charge
+47850.00
+2 Energy Charge
+423400.00
+81492 KVARH
+19412.000
+3
+Fuel Surcharge
+301672.50
+Peak HR
+Night HR
+AMD
+AMD Day
+AMD Night
+224783 MF
+4
+4
+Electricity Duty
+152635.69
+288242 Avg. PF
+0.981
+5
+PF Adj./Rebate
+-6562.70
+0
+0.00
+Night Units
+Time Use Unit
+7
+0.00 1/3 of Unit
+40238.000 6 Night Rebate
+31380.000
+35283.000
+EHV Rebate
+8
+Time of use Charges
+0.00
+14121.00
+Night Concession Unit
+40238.000
+9 Total Consumption Charge
+763178.46
+10 Electricity Duty
+152635.69
+11 Meter Charges
+0.00
+12 Cross Subsidy
+13 Wheeling Charges
+14 Parallel Op. Charges
+15] Current Month's Bill Amount 915814.15
+16 Outstanding Arrears
+0.00
+17 Delayed Payment Charges
+0.00
+18 Adv.Payment/Adjust.
+0.12
+19 Freez Amount
+0.00
+20 Net Payable
+915814.27
+Final Due Amount (Round Value) in INR Rs. 915814
+Amount in Words: Indian Rupees Nine Lakhs Fifteen Thousand Eight Hundred & Fouteen Only.
+Payment Date
+Signature
+UPI Payment Limit of
+(For Office Use Only)
+Cash
+Cheque or UPI Reference
+Payment Rs
+
+Return JSON in this exact format:
+{
+  "invoice_number": null,
+  "consumer_name": null,
+  "consumer_number": null,
+  "meter_number": null,
+  "billing_period": null,
+  "previous_reading_date": null,
+  "current_reading_date": null,
+  "units_consumed": null,
+  "bill_amount": null,
+  "due_date": null,
+  "address": null,
+  "discom": null
+}
+
+
+================================================================================

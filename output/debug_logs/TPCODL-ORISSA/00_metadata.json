@@ -1,0 +1,42 @@
+{
+  "filename": "TPCODL-ORISSA.pdf",
+  "timestamp": "2025-12-19T00:31:37.302095",
+  "stages": {
+    "raw_ocr": {
+      "char_count": 2547,
+      "line_count": 164,
+      "confidence": null
+    },
+    "cleaned_ocr": {
+      "char_count": 2547,
+      "line_count": 164
+    },
+    "regex_extraction": {
+      "fields_found": 2,
+      "total_fields": 12
+    },
+    "llm_prompt": {
+      "model": "gpt-4o-mini",
+      "prompt_length": 7020,
+      "timestamp": "2025-12-19T00:31:39.560773"
+    },
+    "llm_response": {
+      "model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 2274,
+        "completion_tokens": 145,
+        "total_tokens": 2419
+      },
+      "timestamp": "2025-12-19T00:31:43.044497"
+    },
+    "final_extraction": {
+      "fields_found": 10,
+      "total_fields": 12
+    },
+    "accuracy_evaluation": {
+      "overall_accuracy": 60.0,
+      "correct_fields": 3,
+      "total_fields": 5
+    }
+  }
+}

@@ -1,0 +1,207 @@
+================================================================================
+RAW OCR OUTPUT
+================================================================================
+
+Character Count: 2581
+Line Count: 196
+--------------------------------------------------------------------------------
+
+Full Text:
+--------------------------------------------------------------------------------
+3
+Demand Surcharge
+Mobile No.
+9413535667
+Bill Status
+REGULAR
+4.
+Power Factor Surcharge (+) Incentive (-)/Shunt capacitor (3%)
+Email
+5.
+Unauthorized Consumption Amount
+K.No.
+120222040693
+6.
+CT/PT/Meter Rent
+7
+RSN:
+296
+Transformer Rent
+Service No.
+152085
+Security Amount
+5600.00
+8.
+Base Fuel/Fuel/Special Fuel Surcharge
+507.06
+Account No.
+0802/0037
+9
+Rebates (-) (i) Voltage
+Bill Month
+May/2024
+Bill Period
+1.0000
+(ii) Solar/Sprinkler/Rural Rebate/Pre-Paid Meter Rebate
+Feeder Code
+11F1087279
+Tariff Code
+2020XA
+10.
+Total Nigam Dues(Sum of 1 to 9)
+8531.41
+Category
+NDS
+11
+Electricity Duty
+301.20
+Sanctioned Load
+(KW/HP)
+10.00 KW
+Connected Load (KW/HP)
+10.00 KW
+12.
+Water Conservation Cess
+75.30
+Contracted Demand
+(KVA)
+Urban / Rural
+URBAN
+13.
+Urban Cess
+112.95
+Supply Voltage
+400 V
+Metering Voltage
+400 V
+14.
+Other Nigam Dues
+Meter Owner
+Metering Type
+WCM
+15.
+Other Electricity Dues
+Power Factor
+Billing Demand
+16.
+Other Water Conservation Cess
+Avg. Monthly
+816
+Meter Security Amount
+17.
+Other Urban Cess
+Consumption (P.F.Y.)
+Meter Status
+OK
+Consumer Status
+R
+18.
+Other LED/Deferred Deposit
+Current Reading Date
+30-04-2024
+Previous Reading Date
+30-03-2024
+19.
+Adjusted Amount (Code)
+Current Meter No.
+4943282
+MF
+1/1
+20.
+Total Due Date Amount (Sum of 10 to 19)
+9020.86
+Current Reading KWH
+19269
+Previous Reading KWH
+18516
+21
+Arrear Amount
+Current Reading KVAH
+0
+Previous Reading KVAH
+0
+Current Reading KVA
+0.000
+Previous Reading KVA
+Meter Changed /
+Multimeter Meter No.
+MF
+KVA
+0.000
+22
+Deferred Amount (Active Month)
+23.
+State Gov. Bearer Amount Tariff Subsidy/Domestic Subsidy
+24
+Agriculture Subsidy
+Current Reading KWH
+Previous Reading KWH
+25.
+Total Amount Before Due Date(SNO 20+21-22-23-24)
+9021.00
+Current Reading KVAH
+Previous Reading KVAH
+26.
+LPS
+170.63
+Current Reading KVA
+Previous Reading KVA
+27.
+Total Amount After Due Date(Sum of 25 and 26)
+9191.00
+Meter Status
+Trans Loss Total Consumption
+Bill Issue Date
+01-05-2024
+Due Date
+22-05-2024
+KWH
+753
+753
+Last 6 Months
+Apr24
+Mar24
+Feb24
+Jan24
+Nov23
+Sep23
+Consumption KVAH 0
+0
+Consumption
+0.000
+Consumer PAN No.
+467
+715
+1189
+1003
+1431
+1639
+Bar Code:
+Bill No.
+** Note Line
+ARREAR TCS :-
+0.00
+Consumer Name: AMAR
+CHAND
+Dill Math
+Incremental monthly consumption of
+existing consumer/ consumption of new
+consumer (KWH)
+Parallel operation charges on CPP
+(MIP-HT-3 CONSUMERS)
+0.00
+0.00
+12022203035729
+Office Phone No.
+01592-232420
+M-2004
+TCS/TDS Amount: 0.00
+-X-
+Toll Free Complaint No. 18001806565
+AJMER VIDYUT VITRAN NIGAM LTD
+Electricity Consumption Bill(Office Copy)
+-X
+Bill No.: 12022203035729
+K.No.: 120222040693
+Signature (AEn.)
+================================================================================

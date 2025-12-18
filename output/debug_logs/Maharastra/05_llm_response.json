@@ -1,0 +1,24 @@
+{
+  "stage": "LLM Response",
+  "timestamp": "2025-12-19T00:32:17.608247",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "prompt_tokens": 2331,
+    "completion_tokens": 154,
+    "total_tokens": 2485
+  },
+  "response": {
+    "invoice_number": "000002436874795",
+    "consumer_name": "ALAKA DILIP JAIN",
+    "consumer_number": "036012426687",
+    "meter_number": "06507161895",
+    "billing_period": "1 Month(s)",
+    "previous_reading_date": "11-APR-24",
+    "current_reading_date": "11-MAY-24",
+    "units_consumed": "486",
+    "bill_amount": "6700.00",
+    "due_date": "16-MAY-24",
+    "address": "AT: MANGAL APARTMENT, RAIKAR PARK, 402109",
+    "discom": "MSEDCL"
+  }
+}

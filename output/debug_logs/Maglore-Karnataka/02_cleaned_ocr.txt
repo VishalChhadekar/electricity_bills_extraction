@@ -1,0 +1,84 @@
+================================================================================
+CLEANED OCR OUTPUT (Post-Processing)
+================================================================================
+
+Character Count: 1135
+Line Count: 73
+--------------------------------------------------------------------------------
+
+Full Text:
+--------------------------------------------------------------------------------
+bordad Sulja* diejam doctƆ DabD7
+SD/Electricity Bill
+GSTIN 29AADCM7029H1ZA
+ved Szpart/Sub Division
+ಸ್ಥಳ ಸಂಕೇತ Luc Code
+d.to/MR Code.
+ಆರ್.ಆರ್.ಸಂಖ್ಯೆ/RR NO.
+md./CONS NO
+SULLIA
+2110303
+8006
+SL43682
+2990719
+dbabáj Dvd/Name And Address
+FATHIMATH JOURA
+W/O B SHREEF W/O B SHREEF
+23503/Tariff
+ಮಂ.ವಿ.ಪ್ರಮಾಣ /Sane | pad
+ಓದುವ ದಿನಾಂಕ 4 Reading late
+De B/Issued Date
+ಬಿಲ್ ಸಂಖ್ಯೆ /Bill No
+LT-3(a)-U
+6.50KW
+06-05-2024
+06.05.2024 17,41
+202405299071901
+ಜಾಲಿ ಮಾಪನ Pies Rdg
+23660.00
+ಹಿಂದಿನ ಮಾಪನ (Prev Rdg
+23339.00
+08/Consumption(Units)
+321
+ಡಾ.ವಿ.ಪ್ರಮಾಣ /Recorded MD
+0.944KW
+1.00
+./Power Factor "
+0.99
+ಮಾಪಕ ರಾಂಶ (Mtr Const
+ಬಳಸಿದ ಬಿಲ್ ಮೊತ್ತBill For Consuried Units
+ride/Fixed Charges (Unit,Rate,Amt)
+6.50
+321.00
+210.00
+8.00
+Odia [be/[nergy Charges(Unit, Rate,Amt)
+no 9.a.3.mon me)/FPPCA (Unit, Rate,Amt)
+3BR/Tax(92) 5
+1365.00
+2568.00
+321
+0.53
+170.13
+231.12
+eva 03/Sub Total 1----
+4334 25
+0.00
+vid dann dor/Ex Load Penalty
+0.00
+238/Interest
+0.00
+28/Others
+0.00
+ಪ್ರಸ್ತುತ ಬೇಡಿಕೆ (Cor Deviated Payable
+4334.25
+2338/Arrears
+0.00
+/Net Payable(?)
+1334.00
+ಪಿ.ಎಫ್.ದಂಡPT Penalty
+ಪಾವತಿಗೆ ಕಡೆ ದಿನಾಂಕ/Due Date 20:05-2024
+sanyi vivo t5g
+May 14, 2024, (1421)
+29907194334
+================================================================================

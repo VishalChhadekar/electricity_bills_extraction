@@ -3,7 +3,8 @@ Accuracy evaluation module.
 Compares extracted fields with ground truth and calculates accuracy metrics.
 """
 
-from typing import Dict, Tuple
+from typing import Dict, Tuple, List, Optional
+from .ground_truth_matcher import find_ground_truth_by_filename, transform_ground_truth_to_flat
 
 
 def evaluate_accuracy(extracted: dict, ground_truth: dict) -> dict:
@@ -59,6 +60,37 @@ def evaluate_accuracy(extracted: dict, ground_truth: dict) -> dict:
         "total_fields": total_count,
         "field_results": field_results
     }
+
+
+def evaluate_accuracy_from_file(extracted: dict, filename: str, ground_truth_list: List[Dict]) -> Optional[dict]:
+    """
+    Evaluate accuracy by matching filename against ground truth list.
+    
+    Business Logic:
+    - Find ground truth entry matching the filename
+    - Transform nested ground truth structure to flat format
+    - Use existing evaluate_accuracy function for comparison
+    - Return None if no matching ground truth found
+    
+    Args:
+        extracted: Extracted fields dictionary
+        filename: Name of the file being processed (e.g., "AJMER-RAJASTHAN.pdf")
+        ground_truth_list: List of ground truth entries from ground_truth.json
+        
+    Returns:
+        Dictionary with accuracy metrics or None if no ground truth found
+    """
+    # Find matching ground truth entry
+    ground_truth_entry = find_ground_truth_by_filename(ground_truth_list, filename)
+    
+    if ground_truth_entry is None:
+        return None
+    
+    # Transform to flat format
+    ground_truth_flat = transform_ground_truth_to_flat(ground_truth_entry)
+    
+    # Use existing evaluation function
+    return evaluate_accuracy(extracted, ground_truth_flat)
 
 
 def _compare_values(extracted, expected) -> bool:

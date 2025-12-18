@@ -1,0 +1,51 @@
+{
+  "stage": "Accuracy Evaluation",
+  "timestamp": "2025-12-19T00:32:29.626165",
+  "evaluation": {
+    "overall_accuracy": 80.0,
+    "correct_fields": 4,
+    "total_fields": 5,
+    "field_results": {
+      "invoice_number": {
+        "expected": "20240423720982126 7",
+        "extracted": "20240423720982126",
+        "correct": false
+      },
+      "previous_reading_date": {
+        "expected": "15-MAR-24",
+        "extracted": "15-MAR-24",
+        "correct": true
+      },
+      "current_reading_date": {
+        "expected": "20-04-2024",
+        "extracted": "20-04-2024",
+        "correct": true
+      },
+      "meter_number": {
+        "expected": "U326173",
+        "extracted": "U326173",
+        "correct": true
+      },
+      "units_consumed": {
+        "expected": "536",
+        "extracted": "536",
+        "correct": true
+      },
+      "consumer_name": {
+        "expected": null,
+        "extracted": "USHA DEVI",
+        "correct": false
+      },
+      "billing_period": {
+        "expected": null,
+        "extracted": "05-05-2024",
+        "correct": false
+      },
+      "due_date": {
+        "expected": null,
+        "extracted": "15-05-2024",
+        "correct": false
+      }
+    }
+  }
+}

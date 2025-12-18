@@ -1,0 +1,20 @@
+{
+  "stage": "Final Extraction (Merged)",
+  "timestamp": "2025-12-19T00:32:11.155694",
+  "results": {
+    "invoice_number": "111202245150102",
+    "consumer_name": "YASMIN",
+    "consumer_number": "6828682000",
+    "meter_number": "14001502",
+    "billing_period": "15/04/2024 - 15/05/2024",
+    "previous_reading_date": null,
+    "current_reading_date": "15/05/2024",
+    "units_consumed": "154",
+    "bill_amount": "1985.00",
+    "due_date": "29/05/2024",
+    "address": "NO 447,C KORMANGALA",
+    "discom": null
+  },
+  "fields_found": 10,
+  "total_fields": 12
+}

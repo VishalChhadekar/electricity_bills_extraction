@@ -1,0 +1,51 @@
+{
+  "stage": "Accuracy Evaluation",
+  "timestamp": "2025-12-19T00:31:12.608514",
+  "evaluation": {
+    "overall_accuracy": 80.0,
+    "correct_fields": 4,
+    "total_fields": 5,
+    "field_results": {
+      "invoice_number": {
+        "expected": "100580813638",
+        "extracted": null,
+        "correct": false
+      },
+      "previous_reading_date": {
+        "expected": "30-Mar-2024",
+        "extracted": "30-Mar-2024",
+        "correct": true
+      },
+      "current_reading_date": {
+        "expected": "29-Apr-2024",
+        "extracted": "29-Apr-2024",
+        "correct": true
+      },
+      "meter_number": {
+        "expected": "7763000",
+        "extracted": "7763000",
+        "correct": true
+      },
+      "units_consumed": {
+        "expected": "1090",
+        "extracted": "1090",
+        "correct": true
+      },
+      "consumer_name": {
+        "expected": null,
+        "extracted": "Kiran Shinde",
+        "correct": false
+      },
+      "billing_period": {
+        "expected": null,
+        "extracted": "Apr-24",
+        "correct": false
+      },
+      "due_date": {
+        "expected": null,
+        "extracted": "23-May-2024",
+        "correct": false
+      }
+    }
+  }
+}

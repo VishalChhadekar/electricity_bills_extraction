@@ -1,0 +1,24 @@
+{
+  "stage": "LLM Response",
+  "timestamp": "2025-12-19T00:32:23.656057",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "prompt_tokens": 1920,
+    "completion_tokens": 174,
+    "total_tokens": 2094
+  },
+  "response": {
+    "invoice_number": "915562804157",
+    "consumer_name": "G. MANJUNATHA",
+    "consumer_number": "9155632000",
+    "meter_number": "9155632204",
+    "billing_period": "01-04-2024 01-05-2024",
+    "previous_reading_date": "01-04-2024",
+    "current_reading_date": "01-06-2024",
+    "units_consumed": "638",
+    "bill_amount": "5407.80",
+    "due_date": "15-05-2024",
+    "address": "VALMIKI CIRCAL, 32ND WA TALAVARKERI, HPT, KAR -",
+    "discom": "Gulbarga Electricity Supply Company Limited"
+  }
+}

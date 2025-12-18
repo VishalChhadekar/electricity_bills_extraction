@@ -1,0 +1,282 @@
+================================================================================
+LLM PROMPT SENT TO OPENAI
+================================================================================
+
+Model: gpt-4o-mini
+Temperature: 0
+Response Format: JSON
+Timestamp: 2025-12-19T00:31:08.062749
+--------------------------------------------------------------------------------
+
+SYSTEM MESSAGE:
+--------------------------------------------------------------------------------
+You are a precise data extraction assistant. Extract only what is explicitly present in the text. Return valid JSON only.
+
+--------------------------------------------------------------------------------
+
+USER PROMPT:
+--------------------------------------------------------------------------------
+You are an expert at extracting structured data from Indian electricity bills.
+
+IMPORTANT INSTRUCTIONS:
+1. Extract fields EXACTLY as they appear in the OCR text
+2. If a field is missing or unclear, return null
+3. Do NOT guess or infer values
+4. Pay attention to common label variations across different states
+5. Return ONLY valid JSON matching the schema
+
+---
+EXAMPLE 1 - Rajasthan Bill:
+---
+OCR Text:
+AJMER VIDYUT VITRAN NIGAM LTD
+Invoice No: 12022203035729
+Consumer Name: RAJESH KUMAR
+Consumer No: 0802/0037
+Meter No: 4943282
+Billing Period: May/2024
+Previous Reading Date: 30-03-2024
+Current Reading Date: 30-04-2024
+Units Consumed: 753
+Total Amount: Rs. 5600.00
+Due Date: 22-05-2024
+
+Correct Extraction:
+{
+  "invoice_number": "12022203035729",
+  "consumer_name": "RAJESH KUMAR",
+  "consumer_number": "0802/0037",
+  "meter_number": "4943282",
+  "billing_period": "May/2024",
+  "previous_reading_date": "30-03-2024",
+  "current_reading_date": "30-04-2024",
+  "units_consumed": "753",
+  "bill_amount": "5600.00",
+  "due_date": "22-05-2024",
+  "address": null,
+  "discom": "AJMER VIDYUT VITRAN NIGAM LTD"
+}
+
+---
+EXAMPLE 2 - Maharashtra Bill:
+---
+OCR Text:
+MSEDCL - Maharashtra State Electricity Distribution Co Ltd
+Bill Number: 000002436874795
+Account Number: 000002436874795
+Meter Serial No: 06507161895
+Bill Month: MAY-24
+Last Reading: 11-APR-24
+Current Reading: 11-MAY-24
+Consumption: 486 Units
+Bill Amount: 3250
+Payment Due: 25-MAY-24
+
+Correct Extraction:
+{
+  "invoice_number": "000002436874795",
+  "consumer_name": null,
+  "consumer_number": "000002436874795",
+  "meter_number": "06507161895",
+  "billing_period": "MAY-24",
+  "previous_reading_date": "11-APR-24",
+  "current_reading_date": "11-MAY-24",
+  "units_consumed": "486",
+  "bill_amount": "3250",
+  "due_date": "25-MAY-24",
+  "address": null,
+  "discom": "MSEDCL"
+}
+
+---
+FIELD DESCRIPTIONS & COMMON LABELS:
+---
+
+1. invoice_number: Bill/Invoice number (unique identifier for the bill)
+   Common labels: "Invoice No", "Bill No", "Bill Number", "Invoice Number", "बिल संख्या", "Receipt No"
+   
+2. consumer_name: Full name of the electricity consumer
+   Common labels: "Consumer Name", "Name", "Customer Name", "उपभोक्ता का नाम"
+   
+3. consumer_number: Consumer/Account/Customer number (alphanumeric, may include slashes or hyphens)
+   Common labels: "Consumer No", "Account No", "Customer No", "CA No", "Consumer Number", "खाता संख्या"
+   
+4. meter_number: Electricity meter serial number (usually 6-10 digits, may have prefix)
+   Common labels: "Meter No", "Meter Number", "Meter Serial No", "MTR NO", "मीटर नंबर", "Meter S.No"
+   
+5. billing_period: Billing period or bill month
+   Common labels: "Billing Period", "Bill Month", "Period", "Bill For", "बिलिंग अवधि"
+   
+6. previous_reading_date: Date of previous/last meter reading
+   Common labels: "Previous Reading Date", "Last Reading", "Prev Reading", "पिछली रीडिंग", "Previous Date"
+   Formats: DD-MM-YYYY, DD/MM/YYYY, DD-MMM-YY, DD.MM.YYYY
+   
+7. current_reading_date: Date of current/present meter reading
+   Common labels: "Current Reading Date", "Present Reading", "Reading Date", "वर्तमान रीडिंग", "Current Date"
+   Formats: DD-MM-YYYY, DD/MM/YYYY, DD-MMM-YY, DD.MM.YYYY
+   
+8. units_consumed: Total electricity units consumed (number, may have decimals)
+   Common labels: "Units Consumed", "Consumption", "Total Units", "Energy Consumed", "खपत इकाइयाँ", "kWh"
+   
+9. bill_amount: Total bill amount (number, extract without currency symbol)
+   Common labels: "Total Amount", "Bill Amount", "Amount Payable", "Net Amount", "कुल राशि", "Total"
+   
+10. due_date: Payment due date
+    Common labels: "Due Date", "Payment Due Date", "Last Date", "Pay By", "भुगतान तिथि"
+    Formats: DD-MM-YYYY, DD/MM/YYYY, DD-MMM-YY
+   
+11. address: Consumer's address (full address if available)
+    Common labels: "Address", "Consumer Address", "पता", "Service Address"
+    
+12. discom: Distribution company name (electricity board/company)
+    Common labels: Usually appears at top of bill as company name
+    Examples: "MSEDCL", "BESCOM", "TPCODL", "AJMER VIDYUT VITRAN NIGAM LTD"
+
+---
+NOW EXTRACT FROM THIS BILL:
+---
+
+OCR Text:
+GST
+Malad/Dindoshi/
+13/049/33A/033/001
+Regular
+29-Apr-2024
+30-Mar-2024
+CA NO:102688294
+*11320.00
+Due Date: 23-May-2024
+The due date refers to only current bill amount,
+previous balance is payable immediately
+Bill Month
+Apr-24
+Bill Period: 31-Mar-2024-29-Apr-2024
+Units Consumed
+1090
+Current Month Bill
+₹11354.59
+Previous Outstanding
+₹7.09
+Previous Units: 1022
+• Round sum payable by discount date 09-May-2024: Amt ₹11220.00 Discount 102.17
+• Round sum payable after due date 23-May-2024 Amt 11470.00 DPC ₹141.93
+Scan code to pay your bill via (use any UPI app)
+UPI
+LEHE
+BBPS
+BAPA BI PAYMENT ISTIM
+CONSUMPTION TREND
+NACH
+☐ Current year
+Nearest Collection Centre (Cash/Cheque)
+Adani Electricity, Malad, MBH colony, Dindoshi, Western Express
+Highway, Malad(East), Mumbai-400097
+☑Previous year
+Phinehve
+Kiran Shinde
+Division Head
+Malad
+MAJOR BILL COMPONENTS (Rounded off amt)
+1360
+1020
+"This bill for power supply cannot be treated or utilised as proof that the premises for which the power supply has been granted is an authorised structure nor
+I amount to proof of ownership of the premises.
+would the issuance of the bill am
+680
+340
+0
+โลต
+1,165
+₤1.051
+1,023
+0081
+0861
+957
+1265
+【1,168-
+Apr Mar Feb Jan
+Dec Nov Oct
+. Sep
+METER DETAILS
+Meter
+Number
+Present
+Reading
+Previous
+Reading
+Multiplying
+Factor
+7763000
+326492.00
+325402.00
+1
+NET PREV
+NET OTHER(Cr)
+33
+FIXED
+474
+FAC
+DUTIES/TAXES/
+1.299
+1,300)
+1,288,
+WHEELING
+ENERGY
+Aug
+Jul
+Jun
+May
+HELP CENTER
+1,137
+2,819
+0
+1581
+3162
+4743
+6324
+Consumption Units(kWh)
+1090
+19122 Toll Free No.(24X7)
+www.adanielectricity.com
+☑ helpdesk.mumbaielectricity@adani.com
+Adani Electricity, Malad, MBH colony, Dindoshi, Western Express
+Highway, Malad(East), Mumbai-400097
+Whatsapp Us on: 9594519122
+Portal Related Complaint call us:19122
+For internal complaint redressal system (ICRS), visit our website:
+www.adanielectricity.com
+Total Consumption
+4+
+IMPORTANT MESSAGE
+1090
+• Further to our earlier communication, we have enrolled your account number for paperless billing. To
+continue receiving paper bills pls write to emaildesk.mumbaielectricity@adani.com.
+• As per Honorable MERC approval dated 6th Mar 2024, Fuel adjustment charge(FAC) is being levied in
+current month. For any query, kindly connect at our Toll free number :19122 or visit
+https://www.adanielectricity.com/faqs for details...
+*New Tariff rates are effective from 01.04.2024, as per MERC order dated 31.03.2023 in Case No.231 of
+2022. Revised tariffs are applied on prorated units. more infor
+Join us on:
+ми
+VOTE FOR.
+POWER
+6,323
+
+Return JSON in this exact format:
+{
+  "invoice_number": null,
+  "consumer_name": null,
+  "consumer_number": null,
+  "meter_number": null,
+  "billing_period": null,
+  "previous_reading_date": null,
+  "current_reading_date": null,
+  "units_consumed": null,
+  "bill_amount": null,
+  "due_date": null,
+  "address": null,
+  "discom": null
+}
+
+
+================================================================================

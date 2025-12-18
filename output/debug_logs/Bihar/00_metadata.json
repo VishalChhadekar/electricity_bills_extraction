@@ -1,0 +1,42 @@
+{
+  "filename": "Bihar.pdf",
+  "timestamp": "2025-12-19T00:32:23.667023",
+  "stages": {
+    "raw_ocr": {
+      "char_count": 2124,
+      "line_count": 168,
+      "confidence": null
+    },
+    "cleaned_ocr": {
+      "char_count": 2124,
+      "line_count": 168
+    },
+    "regex_extraction": {
+      "fields_found": 0,
+      "total_fields": 12
+    },
+    "llm_prompt": {
+      "model": "gpt-4o-mini",
+      "prompt_length": 6597,
+      "timestamp": "2025-12-19T00:32:25.843673"
+    },
+    "llm_response": {
+      "model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 2364,
+        "completion_tokens": 169,
+        "total_tokens": 2533
+      },
+      "timestamp": "2025-12-19T00:32:29.623447"
+    },
+    "final_extraction": {
+      "fields_found": 12,
+      "total_fields": 12
+    },
+    "accuracy_evaluation": {
+      "overall_accuracy": 80.0,
+      "correct_fields": 4,
+      "total_fields": 5
+    }
+  }
+}

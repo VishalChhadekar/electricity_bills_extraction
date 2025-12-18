@@ -1,0 +1,42 @@
+{
+  "filename": "DAKSHIN-HARIYANA.pdf",
+  "timestamp": "2025-12-19T00:30:56.693167",
+  "stages": {
+    "raw_ocr": {
+      "char_count": 4067,
+      "line_count": 270,
+      "confidence": null
+    },
+    "cleaned_ocr": {
+      "char_count": 4067,
+      "line_count": 270
+    },
+    "regex_extraction": {
+      "fields_found": 1,
+      "total_fields": 12
+    },
+    "llm_prompt": {
+      "model": "gpt-4o-mini",
+      "prompt_length": 8540,
+      "timestamp": "2025-12-19T00:30:59.355927"
+    },
+    "llm_response": {
+      "model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 2802,
+        "completion_tokens": 170,
+        "total_tokens": 2972
+      },
+      "timestamp": "2025-12-19T00:31:05.142809"
+    },
+    "final_extraction": {
+      "fields_found": 10,
+      "total_fields": 12
+    },
+    "accuracy_evaluation": {
+      "overall_accuracy": 100.0,
+      "correct_fields": 5,
+      "total_fields": 5
+    }
+  }
+}

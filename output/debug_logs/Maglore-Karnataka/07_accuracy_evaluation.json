@@ -1,0 +1,51 @@
+{
+  "stage": "Accuracy Evaluation",
+  "timestamp": "2025-12-19T00:31:30.733569",
+  "evaluation": {
+    "overall_accuracy": 60.0,
+    "correct_fields": 3,
+    "total_fields": 5,
+    "field_results": {
+      "invoice_number": {
+        "expected": "202405299071901",
+        "extracted": "202405299071901",
+        "correct": true
+      },
+      "previous_reading_date": {
+        "expected": "",
+        "extracted": null,
+        "correct": false
+      },
+      "current_reading_date": {
+        "expected": "06-05-2024",
+        "extracted": "06.05.2024",
+        "correct": false
+      },
+      "meter_number": {
+        "expected": "SL43682",
+        "extracted": "SL43682",
+        "correct": true
+      },
+      "units_consumed": {
+        "expected": "321",
+        "extracted": "321",
+        "correct": true
+      },
+      "consumer_name": {
+        "expected": null,
+        "extracted": "FATHIMATH JOURA",
+        "correct": false
+      },
+      "billing_period": {
+        "expected": null,
+        "extracted": "06.05.2024",
+        "correct": false
+      },
+      "due_date": {
+        "expected": null,
+        "extracted": "20:05-2024",
+        "correct": false
+      }
+    }
+  }
+}

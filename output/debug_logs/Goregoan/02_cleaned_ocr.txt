@@ -1,0 +1,135 @@
+================================================================================
+CLEANED OCR OUTPUT (Post-Processing)
+================================================================================
+
+Character Count: 2525
+Line Count: 124
+--------------------------------------------------------------------------------
+
+Full Text:
+--------------------------------------------------------------------------------
+GST
+Malad/Dindoshi/
+13/049/33A/033/001
+Regular
+29-Apr-2024
+30-Mar-2024
+CA NO:102688294
+*11320.00
+Due Date: 23-May-2024
+The due date refers to only current bill amount,
+previous balance is payable immediately
+Bill Month
+Apr-24
+Bill Period: 31-Mar-2024-29-Apr-2024
+Units Consumed
+1090
+Current Month Bill
+₹11354.59
+Previous Outstanding
+₹7.09
+Previous Units: 1022
+• Round sum payable by discount date 09-May-2024: Amt ₹11220.00 Discount 102.17
+• Round sum payable after due date 23-May-2024 Amt 11470.00 DPC ₹141.93
+Scan code to pay your bill via (use any UPI app)
+UPI
+LEHE
+BBPS
+BAPA BI PAYMENT ISTIM
+CONSUMPTION TREND
+NACH
+☐ Current year
+Nearest Collection Centre (Cash/Cheque)
+Adani Electricity, Malad, MBH colony, Dindoshi, Western Express
+Highway, Malad(East), Mumbai-400097
+☑Previous year
+Phinehve
+Kiran Shinde
+Division Head
+Malad
+MAJOR BILL COMPONENTS (Rounded off amt)
+1360
+1020
+"This bill for power supply cannot be treated or utilised as proof that the premises for which the power supply has been granted is an authorised structure nor
+I amount to proof of ownership of the premises.
+would the issuance of the bill am
+680
+340
+0
+โลต
+1,165
+₤1.051
+1,023
+0081
+0861
+957
+1265
+【1,168-
+Apr Mar Feb Jan
+Dec Nov Oct
+. Sep
+METER DETAILS
+Meter
+Number
+Present
+Reading
+Previous
+Reading
+Multiplying
+Factor
+7763000
+326492.00
+325402.00
+1
+NET PREV
+NET OTHER(Cr)
+33
+FIXED
+474
+FAC
+DUTIES/TAXES/
+1.299
+1,300)
+1,288,
+WHEELING
+ENERGY
+Aug
+Jul
+Jun
+May
+HELP CENTER
+1,137
+2,819
+0
+1581
+3162
+4743
+6324
+Consumption Units(kWh)
+1090
+19122 Toll Free No.(24X7)
+www.adanielectricity.com
+☑ helpdesk.mumbaielectricity@adani.com
+Adani Electricity, Malad, MBH colony, Dindoshi, Western Express
+Highway, Malad(East), Mumbai-400097
+Whatsapp Us on: 9594519122
+Portal Related Complaint call us:19122
+For internal complaint redressal system (ICRS), visit our website:
+www.adanielectricity.com
+Total Consumption
+4+
+IMPORTANT MESSAGE
+1090
+• Further to our earlier communication, we have enrolled your account number for paperless billing. To
+continue receiving paper bills pls write to emaildesk.mumbaielectricity@adani.com.
+• As per Honorable MERC approval dated 6th Mar 2024, Fuel adjustment charge(FAC) is being levied in
+current month. For any query, kindly connect at our Toll free number :19122 or visit
+https://www.adanielectricity.com/faqs for details...
+*New Tariff rates are effective from 01.04.2024, as per MERC order dated 31.03.2023 in Case No.231 of
+2022. Revised tariffs are applied on prorated units. more infor
+Join us on:
+ми
+VOTE FOR.
+POWER
+6,323
+================================================================================

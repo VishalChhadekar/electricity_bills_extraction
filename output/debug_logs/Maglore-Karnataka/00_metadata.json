@@ -1,0 +1,42 @@
+{
+  "filename": "Maglore-Karnataka.jpg",
+  "timestamp": "2025-12-19T00:31:25.913326",
+  "stages": {
+    "raw_ocr": {
+      "char_count": 1135,
+      "line_count": 73,
+      "confidence": null
+    },
+    "cleaned_ocr": {
+      "char_count": 1135,
+      "line_count": 73
+    },
+    "regex_extraction": {
+      "fields_found": 2,
+      "total_fields": 12
+    },
+    "llm_prompt": {
+      "model": "gpt-4o-mini",
+      "prompt_length": 5608,
+      "timestamp": "2025-12-19T00:31:27.232951"
+    },
+    "llm_response": {
+      "model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 1873,
+        "completion_tokens": 129,
+        "total_tokens": 2002
+      },
+      "timestamp": "2025-12-19T00:31:30.729876"
+    },
+    "final_extraction": {
+      "fields_found": 10,
+      "total_fields": 12
+    },
+    "accuracy_evaluation": {
+      "overall_accuracy": 60.0,
+      "correct_fields": 3,
+      "total_fields": 5
+    }
+  }
+}

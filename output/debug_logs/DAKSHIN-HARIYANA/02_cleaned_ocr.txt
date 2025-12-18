@@ -1,0 +1,281 @@
+================================================================================
+CLEANED OCR OUTPUT (Post-Processing)
+================================================================================
+
+Character Count: 4067
+Line Count: 270
+--------------------------------------------------------------------------------
+
+Full Text:
+--------------------------------------------------------------------------------
+TRANSPORT HUB, PATLI HAZIPUR TEH FARUKHNAGAR,
+IMT MANESAR, 122506, GURUGRAM, HR-122506, IND
+K No:
+Circle: GURUGRAM CIRCLE-
+2
+Division: Manesar
+Cycle/Group: GEYA/19U
+Bill Month: MAY/2024
+Issue Date: 15/05/2024
+Bill No: 782622204383
+Sub Division: G23-Farukh Nagar
+Due D
+2110012UZT
+Surcharge(): 4080.00
+Gross Amount Payable After Due Date(*): 282323.00
+Net Payable Amount in words: Two Lakh Seventy Eight Thousand Two Hundred Fourty Three Rupees Only
+User Id:- reportus Generated On:- 16-05-2024 04:57:21
+Meter and Read Details (* Latest MCO is shown in case of multiple MCO in one billing cycle)
+Meter No.
+Meter Reading Date
+Old
+Period
+Meter Reading
+Consumed
+MDI
+Unit
+M.F.
+New
+Days
+Old
+New
+Units
+Billed
+Units
+Bill
+Read
+Basis Rmrk Sts
+Mtr
+31.30
+X1670071
+01/04/2024
+01/05/2024
+30
+kWh
+34701.5
+36324
+5
+8112.5
+8112.5
+OK
+OK
+A
+(KW)
+0.00
+X1670071
+01/04/2024
+01/05/2024
+30
+kVAh
+41059.5
+42694
+5
+8172.5
+8172.5
+OK
+OK
+A
+0
+Description
+Previous
+Arrears Outstanding for the Financial Year (*)
+Current
+Slab Calculation
+Connection Details
+Total (*)
+SOP Charges
+0.00
+0.00
+F.S.A.
+0.00
+0.00
+Surcharge
+0.00
+3219.87
+0.00
+0.00
+3219.87
+Unit
+8172.5
+Rate
+13.300
+Amount (*)
+108694.25
+Tariff Category
+HTS-NDS
+Flats in BS (DS)
+NA
+Total
+108694.25
+Supply Voltage(kV)
+11.00 kV
+Applicable Tariff on Read Date:
+E. Duty
+0.00
+0.00
+0.00
+MMC(*)
+M. Tax
+0.00
+0.00
+0.00
+Fixed Charges
+0.00
+0.00
+0.00
+Sanctioned Load (Kw/CD)
+Security Deposit
+DOC/DOE
+Excess Credit
+0.00
+-3220.16
+-3220.16
+Meter Ownership/MDI Meter
+Total Arrear
+0.00
+-0.29
+-0.29
+Meter Make/Meter Type
+490.00/490
+0.00
+1960000.01
+12/02/2022/07/02/2024
+Nigam Meter/
+Secure Meter Ltd. /HT-
+MTR
+Details of Charges for Current Cycle
+Description
+Amount (*)
+Details of Amount Payable
+Description
+Last Payment Details
+Amount (*)
+Amount(*)
+Fixed Charges
+159484.87
+Current Cycle Charges
+Energy Charges
+108694.25
+Arrears/Outstanding Dues
+278243.09
+-0.29
+Receipt No
+MMC/FC for Reconnection
+0.00
+Sundry Charges/Allowances
+3220.16/-0.29
+Receipt Date
+Mode of Payment
+285967.00
+782623355539
+20/04/2024
+Amount to cover MMC
+0.00
+Provisional Adjustment/BR Adj.
+FPPAS
+3812.88
+LPS Adjustment
+0.00
+-3219.87
+Previous Consumption Pattern
+Units
+Units
+Bill month
+MDI
+Status
+TDS/TCS
+0.00/0.00
+Adv. Security Deposit
+(KWH)
+(KVAH)
+0.00
+Amt*/Non Energy chrg
+Nov-2023
+5762.5
+5825
+22.1
+OK
+Excess Load Surcharge
+0.00
+Net Payable Amount
+Dec-2023
+5465
+5492.5
+17.6
+OK
+278243.00
+Capacitor Surcharge
+0.00
+On Or Before Due Date()
+Jan-2024
+9027.5
+9075
+26.3
+OK
+MSC/Green Energy
+0.00/0.00
+Surcharge(*)
+Feb-2024
+12360
+12380
+37.1
+OK
+4080.00
+Premium
+Line Service Charges
+Capacitor Service Charges
+Mar-2024
+9487.5
+9532.5
+30.8
+OK
+0.00
+Gross Amount Payable After
+282323.00
+Apr-2024
+8017.5
+8042.5
+23.8
+OK
+0.00
+Due Date(*)
+Solar Rebate /Prepaid
+PAN/TAN: /
+0.00/0.00/0.00
+Brief details of Sundry charges /allowances
+Rebate/Gaushala Rebate
+Govt. Subsidy/Battery Rbt
+Electricity Duty
+Municipal Tax / P Tax
+0.00/0.00
+811.25
+5439.84
+Transfer Adjustment from Over Payment ( )
+Transfer Adjustment from Over Payment ( )
+Transfer Adjustment from Over Payment ( )
+Date from which bill other than "OK"
+is being issued:
+Reason:
+Total Current Cycle
+Charges (*)
+DD to be drawn in favour of
+278243.09
+SDO G23-Farukh Nagar, DHBVN, FARUKH NAGAR
+Payment of this bill can be made online by logging on the
+Website:www.dhbvn.org.in at any time and at office counter
+on all working days during working hours i.e. 09:00AM to
+05:00PM.
+Grievance pertaining to this bill can be
+lodged with
+Important Information for consumers:
+This Bill be considered as a notice under section 56 of The Electricity Act 2003. Kindly pay the bill by
+due date. In case of default the connection is liable to be disconnected after 15 days of due date.
+*This is an interest security amount and interest on this security @6.75 % shall be paid for FY 2023-24.
+This bill does not confer any rights of ownership on the property where this connection exists.
+T&C shall apply.
+Address and Telephone Number(s) of the authorities relating to consumers grievances
+Address & Telephone number(s) of the
+For all types of
+complaints/billing information
+call at:
+================================================================================

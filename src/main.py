@@ -14,14 +14,16 @@ sys.path.insert(0, str(Path(__file__).parent))
 from config import validate_credentials
 
 from utils.file_loader import load_file, save_json, load_json
+from utils.debug_logger import DebugLogger
 from preprocessing.image_cleaner import preprocess_image
 from ocr.google_ocr import perform_ocr, clean_ocr_text
 from extraction.regex_extractor import extract_with_regex
 from extraction.llm_extractor import extract_with_llm, merge_extractions
-from evaluation.accuracy import evaluate_accuracy, generate_accuracy_report
+from evaluation.accuracy import evaluate_accuracy, evaluate_accuracy_from_file, generate_accuracy_report
+from evaluation.ground_truth_matcher import load_ground_truth_file
 
 
-def process_bill(input_path: str, ground_truth_path: str = None, verbose: bool = True) -> dict:
+def process_bill(input_path: str, ground_truth_list: list = None, verbose: bool = True, debug: bool = False, output_dir: str = None) -> dict:
     """
     Process a single bill through the complete pipeline.
     
@@ -31,13 +33,15 @@ def process_bill(input_path: str, ground_truth_path: str = None, verbose: bool =
     3. Perform OCR using Google Vision
     4. Extract fields using regex
     5. Extract fields using LLM
-    6. Merge results (regex overrides LLM)
+    6. Merge results (LLM overrides regex)
     7. Evaluate accuracy if ground truth provided
     
     Args:
         input_path: Path to input bill (PDF or image)
-        ground_truth_path: Optional path to ground truth JSON
+        ground_truth_list: Optional list of ground truth entries from ground_truth.json
         verbose: If True, print detailed logs including OCR text and LLM interactions
+        debug: If True, save detailed debug logs to output/debug_logs/
+        output_dir: Output directory for debug logs
         
     Returns:
         Dictionary with extracted fields and accuracy (if ground truth provided)
@@ -45,6 +49,13 @@ def process_bill(input_path: str, ground_truth_path: str = None, verbose: bool =
     print(f"\n{'='*60}")
     print(f"Processing: {input_path}")
     print(f"{'='*60}\n")
+    
+    # Extract filename for ground truth matching
+    from pathlib import Path
+    filename = Path(input_path).name
+    
+    # Initialize debug logger
+    logger = DebugLogger(output_dir or "output", filename, enabled=debug)
     
     # Step 1: Load file
     print("Step 1: Loading file...")
@@ -62,7 +73,9 @@ def process_bill(input_path: str, ground_truth_path: str = None, verbose: bool =
     # Step 3: Perform OCR
     print("\nStep 3: Performing OCR...")
     raw_text = perform_ocr(preprocessed)
+    logger.log_raw_ocr(raw_text)
     ocr_text = clean_ocr_text(raw_text)
+    logger.log_cleaned_ocr(ocr_text)
     print(f"  → Extracted {len(ocr_text)} characters")
     
     if verbose:
@@ -75,6 +88,7 @@ def process_bill(input_path: str, ground_truth_path: str = None, verbose: bool =
     # Step 4: Extract with regex
     print("\nStep 4: Extracting fields with regex...")
     regex_result = extract_with_regex(ocr_text)
+    logger.log_regex_extraction(regex_result)
     regex_found = sum(1 for v in regex_result.values() if v is not None)
     print(f"  → Found {regex_found}/11 fields")
     
@@ -88,7 +102,7 @@ def process_bill(input_path: str, ground_truth_path: str = None, verbose: bool =
     
     # Step 5: Extract with LLM
     print("\nStep 5: Extracting fields with LLM...")
-    llm_result = extract_with_llm(ocr_text, verbose=verbose)
+    llm_result = extract_with_llm(ocr_text, verbose=verbose, logger=logger)
     llm_found = sum(1 for v in llm_result.values() if v is not None)
     print(f"  → Found {llm_found}/11 fields")
     
@@ -101,18 +115,25 @@ def process_bill(input_path: str, ground_truth_path: str = None, verbose: bool =
         print("-"*60)
     
     # Step 6: Merge results
-    print("\nStep 6: Merging results (regex overrides LLM)...")
+    print("\nStep 6: Merging results (LLM overrides regex)...")
     final_result = merge_extractions(regex_result, llm_result)
+    logger.log_final_extraction(final_result)
     final_found = sum(1 for v in final_result.values() if v is not None)
     print(f"  → Final: {final_found}/11 fields")
     
     # Step 7: Evaluate accuracy if ground truth provided
     accuracy_data = None
-    if ground_truth_path and os.path.exists(ground_truth_path):
+    if ground_truth_list:
         print("\nStep 7: Evaluating accuracy...")
-        ground_truth = load_json(ground_truth_path)
-        accuracy_data = evaluate_accuracy(final_result, ground_truth)
-        print(f"  → Overall accuracy: {accuracy_data['overall_accuracy']}%")
+        accuracy_data = evaluate_accuracy_from_file(final_result, filename, ground_truth_list)
+        logger.log_accuracy_evaluation(accuracy_data)
+        if accuracy_data:
+            print(f"  → Overall accuracy: {accuracy_data['overall_accuracy']}%")
+        else:
+            print(f"  → No ground truth found for: {filename}")
+    
+    # Save debug metadata
+    logger.save_metadata()
     
     return {
         "extracted": final_result,
@@ -162,6 +183,9 @@ def main():
     for ext in ['*.pdf', '*.PDF', '*.jpg', '*.JPG', '*.jpeg', '*.JPEG', '*.png', '*.PNG']:
         input_files.extend(list(input_dir.glob(ext)))
     
+    # Remove duplicates (Windows is case-insensitive, so *.pdf and *.PDF may match the same file)
+    input_files = list(set(input_files))
+    
     if not input_files:
         print("❌ Error: No input files found in input/ directory")
         print("Supported formats: PDF, JPG, JPEG, PNG")
@@ -177,10 +201,21 @@ def main():
     
     # Check for ground truth
     ground_truth_path = expected_dir / "ground_truth.json"
-    if not ground_truth_path.exists():
+    ground_truth_list = None
+    if ground_truth_path.exists():
+        print(f"\n{'='*60}")
+        print("Loading ground truth data...")
+        print(f"{'='*60}")
+        try:
+            ground_truth_list = load_ground_truth_file(str(ground_truth_path))
+            print(f"✓ Loaded {len(ground_truth_list)} ground truth entries\n")
+        except Exception as e:
+            print(f"✗ Error loading ground truth: {e}")
+            print("Accuracy evaluation will be skipped.\n")
+            ground_truth_list = None
+    else:
         print("ℹ️  No ground truth file found at expected/ground_truth.json")
         print("Accuracy evaluation will be skipped.\n")
-        ground_truth_path = None
     
     # Process each file
     results_summary = []
@@ -193,8 +228,10 @@ def main():
         try:
             result = process_bill(
                 str(input_path),
-                str(ground_truth_path) if ground_truth_path else None,
-                verbose=False  # Set to True for detailed logs
+                ground_truth_list,  # Pass the list instead of path
+                verbose=False,  # Set to True for detailed logs
+                debug=True,  # Enable debug logging
+                output_dir=str(output_dir)
             )
             
             # Generate output filename based on input filename
