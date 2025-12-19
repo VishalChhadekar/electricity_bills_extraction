@@ -1,0 +1,24 @@
+{
+  "stage": "LLM Response",
+  "timestamp": "2025-12-19T00:31:43.043894",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "prompt_tokens": 2274,
+    "completion_tokens": 145,
+    "total_tokens": 2419
+  },
+  "response": {
+    "invoice_number": "104S04682810",
+    "consumer_name": null,
+    "consumer_number": "2300935262",
+    "meter_number": "TS2149729",
+    "billing_period": "19.11.2023 - 21.12.2023",
+    "previous_reading_date": "19/11/2023",
+    "current_reading_date": "21/12/2023",
+    "units_consumed": "154.00",
+    "bill_amount": "1076.00",
+    "due_date": "28/12/2023",
+    "address": null,
+    "discom": "TPCODL"
+  }
+}

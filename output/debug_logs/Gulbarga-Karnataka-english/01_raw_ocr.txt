@@ -1,0 +1,112 @@
+================================================================================
+RAW OCR OUTPUT
+================================================================================
+
+Character Count: 1517
+Line Count: 101
+--------------------------------------------------------------------------------
+
+Full Text:
+--------------------------------------------------------------------------------
+RЯ No.
+Account ID
+C36260)
+9155632000
+GESCOM GSTN Nọ; 29AABCG8895R1ZD
+Office of the Asst. Executive Engineer (Ele.), C, O&M Sub-division Hospet City Sub-Division-2
+Bill No.
+915562804157
+Billing Period
+01-04-2024 01-05-2024
+Bill Date
+01-05-2024
+Name & Address;
+Type
+Commercial LT3
+G. MANJUNATHA
+Tariff
+4LT3A
+S/O G. SIVARAMAPPAS/O G.
+Sanctioned load (KW)
+3.00
+SIVARAMAPPAS/O G.
+SIVARAMAPPAS/O G.
+Sanctioned load (HP)
+0.00
+SIVARAMAPPANEAR
+VALMIKI CIRCAL, 32ND WA
+TALAVARKERI, HPT, KAR -
+Mu Readings for Meta (D 9155632204
+Description
+Date
+KWH Mater
+KVAH Meter
+MB meter
+PF
+PrePreading
+01-06-2024
+27419
+Previous Radia
+01-04-2024
+26581
+Differen
+638
+Meter Co
+Bommation
+1
+538
+IMAGE
+Bonsumpéen
+"
+NGON
+598
+0.85
+Due Date
+15-05-2024
+GJS Reg Date
+Average (FY22-23]
+Entitlement Units
+Disconnection Date
+30-05-2024
+Your Detalled Bill
+Description
+Fixed charges: 3.00 kW at Rs 210.00 per kW
+Energy Charges: 538.000 kWh at Rs 8.00 per kWh
+Fuel Cost Adjustment Charges: 538.000 KWH at Rs 0.11 per KWH
+Interest on Revenue
+Interest on Tax
+Tax
+lax
+Current Bill Amount
+Arrears
+Bill Correction
+Bill rounding adjustment
+Amount (Rs.)
+630 00
+4.304 09
+59 18
+9.00
+9.00
+367.36
+5380.54
+$407.00
+-5380.59
+Net Payable Amount
+5d/-
+8 05
+5407.80
+Rupees Five Thousand Four Hundred Seven Only
+Assistant Executive Engineer (Ele.)
+habe
+Gulbarga Electricity Supply Company Limited
+Office of the Asst. Executive Engineer (Ele.), C, O&M Sub-division. Hospet City Sub-Division-2
+RR No.
+Billing Period
+Due Date
+Disconnection
+Date
+Bill No.
+Account ID
+Amount
+Payable
+================================================================================

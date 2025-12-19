@@ -1,0 +1,20 @@
+{
+  "stage": "Final Extraction (Merged)",
+  "timestamp": "2025-12-19T00:31:53.135863",
+  "results": {
+    "invoice_number": "202405052627256401",
+    "consumer_name": "HANDRAMMA WO C MANJUNATH",
+    "consumer_number": "B526272564",
+    "meter_number": null,
+    "billing_period": null,
+    "previous_reading_date": "03-05-2024",
+    "current_reading_date": "14-05-2024",
+    "units_consumed": "3.00",
+    "bill_amount": "3543.90",
+    "due_date": "17-05-2024",
+    "address": "308F/145 KUDLIĞI P KUDLIGI TOWN",
+    "discom": "ಗುಲ್ಬರ್ಗಾ ವಿದ್ಯುತ್ ನರಂಜನ ಕವಿಯುಮಿಕ"
+  },
+  "fields_found": 10,
+  "total_fields": 12
+}

@@ -1,0 +1,51 @@
+{
+  "stage": "Accuracy Evaluation",
+  "timestamp": "2025-12-19T00:32:17.611130",
+  "evaluation": {
+    "overall_accuracy": 100.0,
+    "correct_fields": 5,
+    "total_fields": 5,
+    "field_results": {
+      "invoice_number": {
+        "expected": "000002436874795",
+        "extracted": "000002436874795",
+        "correct": true
+      },
+      "previous_reading_date": {
+        "expected": "11-APR-24",
+        "extracted": "11-APR-24",
+        "correct": true
+      },
+      "current_reading_date": {
+        "expected": "11-MAY-24",
+        "extracted": "11-MAY-24",
+        "correct": true
+      },
+      "meter_number": {
+        "expected": "06507161895",
+        "extracted": "06507161895",
+        "correct": true
+      },
+      "units_consumed": {
+        "expected": "486",
+        "extracted": "486",
+        "correct": true
+      },
+      "consumer_name": {
+        "expected": null,
+        "extracted": "ALAKA DILIP JAIN",
+        "correct": false
+      },
+      "billing_period": {
+        "expected": null,
+        "extracted": "1 Month(s)",
+        "correct": false
+      },
+      "due_date": {
+        "expected": null,
+        "extracted": "16-MAY-24",
+        "correct": false
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "LLM Response",
+  "timestamp": "2025-12-19T00:32:40.643550",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "prompt_tokens": 1927,
+    "completion_tokens": 137,
+    "total_tokens": 2064
+  },
+  "response": {
+    "invoice_number": null,
+    "consumer_name": "RAM GOPAL",
+    "consumer_number": "6563317000",
+    "meter_number": "2111205UBL511016",
+    "billing_period": null,
+    "previous_reading_date": "15-04-2024",
+    "current_reading_date": "17-05-2024",
+    "units_consumed": "2138.75",
+    "bill_amount": "11465.90",
+    "due_date": null,
+    "address": "S/O BRDOL RAM DOSARKA, Ambala Cantt.",
+    "discom": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "LLM Response",
+  "timestamp": "2025-12-19T00:32:04.325626",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "prompt_tokens": 2724,
+    "completion_tokens": 131,
+    "total_tokens": 2855
+  },
+  "response": {
+    "invoice_number": null,
+    "consumer_name": null,
+    "consumer_number": null,
+    "meter_number": "100010750314-312928",
+    "billing_period": null,
+    "previous_reading_date": "11-Mar-2024",
+    "current_reading_date": "08-MAY-2024",
+    "units_consumed": "2122",
+    "bill_amount": "22280",
+    "due_date": "20-May-2024",
+    "address": "SCO NO-41 SECOND FLOOR PHASE-6 MOHALI",
+    "discom": null
+  }
+}

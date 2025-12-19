@@ -1,0 +1,20 @@
+{
+  "stage": "Final Extraction (Merged)",
+  "timestamp": "2025-12-19T00:31:30.731327",
+  "results": {
+    "invoice_number": "202405299071901",
+    "consumer_name": "FATHIMATH JOURA",
+    "consumer_number": "8006",
+    "meter_number": "SL43682",
+    "billing_period": "06.05.2024",
+    "previous_reading_date": null,
+    "current_reading_date": "06.05.2024",
+    "units_consumed": "321",
+    "bill_amount": "4334.25",
+    "due_date": "20:05-2024",
+    "address": "FATHIMATH JOURA\nW/O B SHREEF W/O B SHREEF\n23503/Tariff",
+    "discom": null
+  },
+  "fields_found": 10,
+  "total_fields": 12
+}

@@ -1,0 +1,51 @@
+{
+  "stage": "Accuracy Evaluation",
+  "timestamp": "2025-12-19T00:31:48.108143",
+  "evaluation": {
+    "overall_accuracy": 40.0,
+    "correct_fields": 2,
+    "total_fields": 5,
+    "field_results": {
+      "invoice_number": {
+        "expected": "763338479224",
+        "extracted": null,
+        "correct": false
+      },
+      "previous_reading_date": {
+        "expected": "03-APR-2024",
+        "extracted": "03-APR-24",
+        "correct": false
+      },
+      "current_reading_date": {
+        "expected": "04-MAY-2024",
+        "extracted": "04-MAY-24",
+        "correct": false
+      },
+      "meter_number": {
+        "expected": "9082529",
+        "extracted": "9082529",
+        "correct": true
+      },
+      "units_consumed": {
+        "expected": "1296.7",
+        "extracted": "1296.7",
+        "correct": true
+      },
+      "consumer_name": {
+        "expected": null,
+        "extracted": null,
+        "correct": true
+      },
+      "billing_period": {
+        "expected": null,
+        "extracted": "MAY-2024",
+        "correct": false
+      },
+      "due_date": {
+        "expected": null,
+        "extracted": "27-MAY-2024",
+        "correct": false
+      }
+    }
+  }
+}

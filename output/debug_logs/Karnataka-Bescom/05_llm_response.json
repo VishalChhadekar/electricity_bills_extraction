@@ -1,0 +1,24 @@
+{
+  "stage": "LLM Response",
+  "timestamp": "2025-12-19T00:32:11.153900",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "prompt_tokens": 1887,
+    "completion_tokens": 144,
+    "total_tokens": 2031
+  },
+  "response": {
+    "invoice_number": "111202245150102",
+    "consumer_name": "YASMIN",
+    "consumer_number": "6828682000",
+    "meter_number": "14001502",
+    "billing_period": "15/04/2024 - 15/05/2024",
+    "previous_reading_date": null,
+    "current_reading_date": "15/05/2024",
+    "units_consumed": "154",
+    "bill_amount": "1985.00",
+    "due_date": "29/05/2024",
+    "address": "NO 447,C KORMANGALA",
+    "discom": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "LLM Response",
+  "timestamp": "2025-12-19T00:30:56.659002",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "prompt_tokens": 1450,
+    "completion_tokens": 126,
+    "total_tokens": 1576
+  },
+  "response": {
+    "invoice_number": null,
+    "consumer_name": null,
+    "consumer_number": null,
+    "meter_number": "2772090",
+    "billing_period": null,
+    "previous_reading_date": "11-04-2024",
+    "current_reading_date": "05-05-2024",
+    "units_consumed": "326",
+    "bill_amount": null,
+    "due_date": null,
+    "address": "NAGAR, ATARRA, ATARRA, ZTUZUT, UP, IND",
+    "discom": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "filename": "AJMER-RAJASTHAN.pdf",
+  "timestamp": "2025-12-19T00:31:30.742625",
+  "stages": {
+    "raw_ocr": {
+      "char_count": 2581,
+      "line_count": 196,
+      "confidence": null
+    },
+    "cleaned_ocr": {
+      "char_count": 2581,
+      "line_count": 196
+    },
+    "regex_extraction": {
+      "fields_found": 6,
+      "total_fields": 12
+    },
+    "llm_prompt": {
+      "model": "gpt-4o-mini",
+      "prompt_length": 7054,
+      "timestamp": "2025-12-19T00:31:32.575492"
+    },
+    "llm_response": {
+      "model": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 2229,
+        "completion_tokens": 147,
+        "total_tokens": 2376
+      },
+      "timestamp": "2025-12-19T00:31:37.272575"
+    },
+    "final_extraction": {
+      "fields_found": 11,
+      "total_fields": 12
+    },
+    "accuracy_evaluation": {
+      "overall_accuracy": 100.0,
+      "correct_fields": 5,
+      "total_fields": 5
+    }
+  }
+}

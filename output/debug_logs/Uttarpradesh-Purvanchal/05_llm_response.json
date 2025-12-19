@@ -1,0 +1,24 @@
+{
+  "stage": "LLM Response",
+  "timestamp": "2025-12-19T00:32:35.292242",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "prompt_tokens": 2794,
+    "completion_tokens": 151,
+    "total_tokens": 2945
+  },
+  "response": {
+    "invoice_number": "019591568992",
+    "consumer_name": null,
+    "consumer_number": null,
+    "meter_number": "00902171",
+    "billing_period": "MAY-2024",
+    "previous_reading_date": "09-APR-24",
+    "current_reading_date": "12-MAY-24",
+    "units_consumed": "2659.85",
+    "bill_amount": "27143",
+    "due_date": "27-MAY-2024",
+    "address": "Daudupur, chandmari, shivpur, varanasi, Varanasi, UP-221003, IND",
+    "discom": null
+  }
+}

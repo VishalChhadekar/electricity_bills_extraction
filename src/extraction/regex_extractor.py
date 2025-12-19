@@ -24,6 +24,7 @@ def extract_with_regex(text: str) -> dict:
         Dictionary with extracted fields (None if not found)
     """
     result = {
+        "invoice_number": extract_invoice_number(text),
         "consumer_name": extract_consumer_name(text),
         "consumer_number": extract_consumer_number(text),
         "meter_number": extract_meter_number(text),
@@ -38,6 +39,16 @@ def extract_with_regex(text: str) -> dict:
     }
     
     return result
+
+
+def extract_invoice_number(text: str) -> Optional[str]:
+    """Extract invoice/bill number - typically 10-20 digits."""
+    patterns = [
+        r'Invoice\\s*(?:No|Number)\\s*[:\\-]?\\s*([A-Z0-9]{8,20})',
+        r'Bill\\s*(?:No|Number)\\s*[:\\-]?\\s*([A-Z0-9]{8,20})',
+        r'Receipt\\s*(?:No|Number)\\s*[:\\-]?\\s*([A-Z0-9]{8,20})',
+    ]
+    return _find_first_match(text, patterns)
 
 
 def extract_consumer_number(text: str) -> Optional[str]:

@@ -1,0 +1,20 @@
+{
+  "stage": "Final Extraction (Merged)",
+  "timestamp": "2025-12-19T00:31:25.904280",
+  "results": {
+    "invoice_number": null,
+    "consumer_name": null,
+    "consumer_number": "Consumer No",
+    "meter_number": "34970",
+    "billing_period": null,
+    "previous_reading_date": null,
+    "current_reading_date": "15-04-2024",
+    "units_consumed": "718264",
+    "bill_amount": "915814.15",
+    "due_date": "25-04-2024",
+    "address": "SURVEY NO.443 & 437 (LOD 1066/2 & 1061/3), VILL.:-BAVLA, TA.:-BAVLA, DIST.:-AHMEDABAD -382220",
+    "discom": null
+  },
+  "fields_found": 7,
+  "total_fields": 12
+}

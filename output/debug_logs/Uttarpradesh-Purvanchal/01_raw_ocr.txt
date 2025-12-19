@@ -1,0 +1,228 @@
+================================================================================
+RAW OCR OUTPUT
+================================================================================
+
+Character Count: 4080
+Line Count: 217
+--------------------------------------------------------------------------------
+
+Full Text:
+--------------------------------------------------------------------------------
+Father/Husband name
+पता / Address
+Daudupur, chandmari, shivpur, varanasi,
+Varanasi, UP-221003, IND
+मोबाइल नंबर /Mobile No
+xxxxxx9486
+ईमेल / Email
+rxxxxxxxxxdey@flipkart.com
+बिल संख्या / Bill No
+019591568992
+बिल की तिथि / Bill Date
+बिल माह / Bill Month
+नेट बिल यूनिट / Net Billed Unit
+13-MAY-2024
+MAY-2024
+2659.85
+टैरिफ / Tariff
+मीटर क्रम संख्या /Meter S. No
+00902171
+LMV2
+सप्लाई टाइप / Supply Type
+20
+जमा प्रतिभूति Security Deposit
+8000
+बिल अक्षांश/ Bill Latitude
+0
+बिल देशांतर / Bill Longitude
+0
+संयोजन तिथि / Connection Date
+04-DEC-2021
+बिल आधार / Bill Basis
+OK
+देय तिथि/ Due Date
+6.79
+बिल डीमांड / Billed Demand
+प्रगामी सब्सिडी / Progressive Subsidy
+इनऑपरेटिव राशि//noperative Amount
+0
+देय तिथि तक छूट / Due Date Rebate
+देय तिथि तक राशि/ Payable By Due Date
+विच्छेदन तिथि / Disconection. Date
+27-MAY-2024
+249.55
+Details
+Gross Amt
+Amount
+Subsidy
+Amount
+This bill will be construed as final notice under section 171 of Supply Code 2005. Supply can be disconnected at any date on non-payment of old dues.
+इस बिल को आपूर्ति संहिता 2005 की धारा 171 के तहत अंतिम नोटिस माना जाएगा। पुराने बकाया का भुगतान न करने पर किसी भी तिथि पर आपूर्ति काटी जा सकती है।
+Details
+प्रतिभूति ब्याज/ Interest on Security
+26894
+03-JUN-2024
+Amount
+0.00
+ऊर्जा प्रभार / Energy Charges
+फिक्स माँग प्रभार / Fixed / Demand Charges
+21898.69
+3055.50
+0.00
+0.00
+21898.69
+देय प्रतिभूति / Due Security
+0
+3055.50
+अग्रिम भुगतान पर ब्याज / Interest on Advance Payment
+0
+न्यूनतम प्रभार / Min Charge
+विद्युत कर / Electricity Duty
+0.00
+0.00
+0.00
+टी डी एस राशि/ TDS Amount
+0
+1871.56
+टी सी एस राशि/ TCS Amount
+0
+ग्रीन ऊर्जा शुल्क / Green_EC
+अतिरिक्त मांग प्रभार / Excess Demand Penalty
+कम पीएफ अधिभार / Low P. F. Surcharge
+अंतिम समायोजन / Provisional Adjustment
+टैरिफ समायोजन / Tariff Adjustments
+क्रेडिट /Credit
+डेबिट/ Debit
+विविध शुल्क/ Misc Charges
+आर्मर्ड केबल शुल्क / Armoured Cable Cost
+छूट / Rebate
+0.00
+सीजी एस टी / CGST
+0
+0.00
+एस जी एस टी/SGST
+0
+0.00
+वर्तमन विलंभ भुगतान अधिभार / Current LPSC
+317.67
+0.00
+नेट करेंट बिल / Net Current Bill
+27143.42
+0.00
+देय तिथि छूट समायोजन / Prev. Due Date Rebate Adj.
+-164.72
+0
+बकाया धनराशि / Arrear Amount
+164.66
+पूर्व विलम्ब भुगतान अधिभार / Prev. Arrear LPSC
+0.00
+0.00
+0
+0
+मुआवजा राशि / Compensation Amt
+किश्त / Installment
+देय राशि / Payable Amount
+27143
+0.00
+0
+0
+0
+अनाद्रित चेक / Dishonor Cheque
+अनाद्रित प्रभार / Dishonor Charge
+थेफ्ट निर्धारण/ Theft Assessment
+Pay your bill online on <https://uppcl.org/> ऑनलाइन भुगतान करे consumers can also pay bills from Deptt. offices, Fair price shops, e-Suvidha, Jansuvidha Kendra and through Vidyut Sakhi and Metereaders उपभोक्ता विभाग के कार्यालयों,
+उचित मूल्य की दुकान, ई-सुविधा, जन सुविधा केंद्र और विद्युत सखी और मीटर रीडर के माध्यम से भी बिलों का भुगतान कर सकते हैं। डी डी चेक हेतु प्राप्तकर्ता Pay DD / Cheque in favour of EXECUTIVE ENGINEER-EUDD V VARANASI
+मीटर लेब संख्या
+मीटर स्तिथि
+दर्ज मांग
+पिछली तिथि
+पिछली रीड
+वर्तमान तिथि
+वर्तमान रीड
+अंतर
+शब्दों में / In Words : Twenty Seven Thousand One Hundred Forty Three Rupees Only
+मीटर
+मीटर
+अवधि
+मीटर
+गुणांक
+यूनिट
+(माह)
+टिपण्णी
+Meter Badge
+Number
+Meter
+Status
+Recorded
+DMD
+Previous Date
+5EQ949700902171
+A
+09-APR-24
+15:00
+Previous
+Read
+44697.01
+Current Date
+Current Read
+Diff
+MF
+Meter
+Unit
+Period
+Meter
+Months
+Rmrk
+12-MAY-24
+00:00
+47356.86
+2659.
+85
+2659.85 KWH
+1
+OK
+5EQ949700902171
+A
+6.79
+1
+6.79 KW
+1
+OK
+निर्धारित यूनिट Assessed Unit
+Opening Surplus Solar
+0.00
+Closing Surplus Solar Units
+0.00
+Units
+मीटर यूनिट Meter
+Units
+2659.8
+5
+यूनिट / Unit
+टैरिफ रेट
+Rates
+राष्ट्र हित में बिजली बचाए / Energy Saved is Energy Produced
+वाट्सएप पर विद्युत् संबंधी विभिन्न सेवाएं प्राप्त करने हेतु मिस कॉल करें To get electricity related services or give a missed call on
+8010968292
+अंतिम भुगतान विवरण / Last Payment Details
+सब्सिडी राशि
+Subsidy Amount
+नेट ऊर्जा प्रभार
+Net Energy Charge
+अंतिम भुगतान राशि/ Last Paid Amount
+अंतिम भुगतान तिथि/Last Paid Date
+17725
+23-APR-2024
+वर्तमान भुगतान विवरण / Current
+Payment Details
+भुगतान राशि/ Paid Amount
+भुगतान तिथि / Paid Date
+भुगतान माध्यम / Payment Mode
+रसीद संख्या/ Receipt No
+ऊर्जा गणना शुल्का EC Calculation
+कुल राशि
+Amount
+सब्सिडी दरे
+Subsidy
+Rate
+================================================================================

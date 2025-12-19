@@ -1,0 +1,428 @@
+================================================================================
+LLM PROMPT SENT TO OPENAI
+================================================================================
+
+Model: gpt-4o-mini
+Temperature: 0
+Response Format: JSON
+Timestamp: 2025-12-19T00:30:59.355337
+--------------------------------------------------------------------------------
+
+SYSTEM MESSAGE:
+--------------------------------------------------------------------------------
+You are a precise data extraction assistant. Extract only what is explicitly present in the text. Return valid JSON only.
+
+--------------------------------------------------------------------------------
+
+USER PROMPT:
+--------------------------------------------------------------------------------
+You are an expert at extracting structured data from Indian electricity bills.
+
+IMPORTANT INSTRUCTIONS:
+1. Extract fields EXACTLY as they appear in the OCR text
+2. If a field is missing or unclear, return null
+3. Do NOT guess or infer values
+4. Pay attention to common label variations across different states
+5. Return ONLY valid JSON matching the schema
+
+---
+EXAMPLE 1 - Rajasthan Bill:
+---
+OCR Text:
+AJMER VIDYUT VITRAN NIGAM LTD
+Invoice No: 12022203035729
+Consumer Name: RAJESH KUMAR
+Consumer No: 0802/0037
+Meter No: 4943282
+Billing Period: May/2024
+Previous Reading Date: 30-03-2024
+Current Reading Date: 30-04-2024
+Units Consumed: 753
+Total Amount: Rs. 5600.00
+Due Date: 22-05-2024
+
+Correct Extraction:
+{
+  "invoice_number": "12022203035729",
+  "consumer_name": "RAJESH KUMAR",
+  "consumer_number": "0802/0037",
+  "meter_number": "4943282",
+  "billing_period": "May/2024",
+  "previous_reading_date": "30-03-2024",
+  "current_reading_date": "30-04-2024",
+  "units_consumed": "753",
+  "bill_amount": "5600.00",
+  "due_date": "22-05-2024",
+  "address": null,
+  "discom": "AJMER VIDYUT VITRAN NIGAM LTD"
+}
+
+---
+EXAMPLE 2 - Maharashtra Bill:
+---
+OCR Text:
+MSEDCL - Maharashtra State Electricity Distribution Co Ltd
+Bill Number: 000002436874795
+Account Number: 000002436874795
+Meter Serial No: 06507161895
+Bill Month: MAY-24
+Last Reading: 11-APR-24
+Current Reading: 11-MAY-24
+Consumption: 486 Units
+Bill Amount: 3250
+Payment Due: 25-MAY-24
+
+Correct Extraction:
+{
+  "invoice_number": "000002436874795",
+  "consumer_name": null,
+  "consumer_number": "000002436874795",
+  "meter_number": "06507161895",
+  "billing_period": "MAY-24",
+  "previous_reading_date": "11-APR-24",
+  "current_reading_date": "11-MAY-24",
+  "units_consumed": "486",
+  "bill_amount": "3250",
+  "due_date": "25-MAY-24",
+  "address": null,
+  "discom": "MSEDCL"
+}
+
+---
+FIELD DESCRIPTIONS & COMMON LABELS:
+---
+
+1. invoice_number: Bill/Invoice number (unique identifier for the bill)
+   Common labels: "Invoice No", "Bill No", "Bill Number", "Invoice Number", "बिल संख्या", "Receipt No"
+   
+2. consumer_name: Full name of the electricity consumer
+   Common labels: "Consumer Name", "Name", "Customer Name", "उपभोक्ता का नाम"
+   
+3. consumer_number: Consumer/Account/Customer number (alphanumeric, may include slashes or hyphens)
+   Common labels: "Consumer No", "Account No", "Customer No", "CA No", "Consumer Number", "खाता संख्या"
+   
+4. meter_number: Electricity meter serial number (usually 6-10 digits, may have prefix)
+   Common labels: "Meter No", "Meter Number", "Meter Serial No", "MTR NO", "मीटर नंबर", "Meter S.No"
+   
+5. billing_period: Billing period or bill month
+   Common labels: "Billing Period", "Bill Month", "Period", "Bill For", "बिलिंग अवधि"
+   
+6. previous_reading_date: Date of previous/last meter reading
+   Common labels: "Previous Reading Date", "Last Reading", "Prev Reading", "पिछली रीडिंग", "Previous Date"
+   Formats: DD-MM-YYYY, DD/MM/YYYY, DD-MMM-YY, DD.MM.YYYY
+   
+7. current_reading_date: Date of current/present meter reading
+   Common labels: "Current Reading Date", "Present Reading", "Reading Date", "वर्तमान रीडिंग", "Current Date"
+   Formats: DD-MM-YYYY, DD/MM/YYYY, DD-MMM-YY, DD.MM.YYYY
+   
+8. units_consumed: Total electricity units consumed (number, may have decimals)
+   Common labels: "Units Consumed", "Consumption", "Total Units", "Energy Consumed", "खपत इकाइयाँ", "kWh"
+   
+9. bill_amount: Total bill amount (number, extract without currency symbol)
+   Common labels: "Total Amount", "Bill Amount", "Amount Payable", "Net Amount", "कुल राशि", "Total"
+   
+10. due_date: Payment due date
+    Common labels: "Due Date", "Payment Due Date", "Last Date", "Pay By", "भुगतान तिथि"
+    Formats: DD-MM-YYYY, DD/MM/YYYY, DD-MMM-YY
+   
+11. address: Consumer's address (full address if available)
+    Common labels: "Address", "Consumer Address", "पता", "Service Address"
+    
+12. discom: Distribution company name (electricity board/company)
+    Common labels: Usually appears at top of bill as company name
+    Examples: "MSEDCL", "BESCOM", "TPCODL", "AJMER VIDYUT VITRAN NIGAM LTD"
+
+---
+NOW EXTRACT FROM THIS BILL:
+---
+
+OCR Text:
+TRANSPORT HUB, PATLI HAZIPUR TEH FARUKHNAGAR,
+IMT MANESAR, 122506, GURUGRAM, HR-122506, IND
+K No:
+Circle: GURUGRAM CIRCLE-
+2
+Division: Manesar
+Cycle/Group: GEYA/19U
+Bill Month: MAY/2024
+Issue Date: 15/05/2024
+Bill No: 782622204383
+Sub Division: G23-Farukh Nagar
+Due D
+2110012UZT
+Surcharge(): 4080.00
+Gross Amount Payable After Due Date(*): 282323.00
+Net Payable Amount in words: Two Lakh Seventy Eight Thousand Two Hundred Fourty Three Rupees Only
+User Id:- reportus Generated On:- 16-05-2024 04:57:21
+Meter and Read Details (* Latest MCO is shown in case of multiple MCO in one billing cycle)
+Meter No.
+Meter Reading Date
+Old
+Period
+Meter Reading
+Consumed
+MDI
+Unit
+M.F.
+New
+Days
+Old
+New
+Units
+Billed
+Units
+Bill
+Read
+Basis Rmrk Sts
+Mtr
+31.30
+X1670071
+01/04/2024
+01/05/2024
+30
+kWh
+34701.5
+36324
+5
+8112.5
+8112.5
+OK
+OK
+A
+(KW)
+0.00
+X1670071
+01/04/2024
+01/05/2024
+30
+kVAh
+41059.5
+42694
+5
+8172.5
+8172.5
+OK
+OK
+A
+0
+Description
+Previous
+Arrears Outstanding for the Financial Year (*)
+Current
+Slab Calculation
+Connection Details
+Total (*)
+SOP Charges
+0.00
+0.00
+F.S.A.
+0.00
+0.00
+Surcharge
+0.00
+3219.87
+0.00
+0.00
+3219.87
+Unit
+8172.5
+Rate
+13.300
+Amount (*)
+108694.25
+Tariff Category
+HTS-NDS
+Flats in BS (DS)
+NA
+Total
+108694.25
+Supply Voltage(kV)
+11.00 kV
+Applicable Tariff on Read Date:
+E. Duty
+0.00
+0.00
+0.00
+MMC(*)
+M. Tax
+0.00
+0.00
+0.00
+Fixed Charges
+0.00
+0.00
+0.00
+Sanctioned Load (Kw/CD)
+Security Deposit
+DOC/DOE
+Excess Credit
+0.00
+-3220.16
+-3220.16
+Meter Ownership/MDI Meter
+Total Arrear
+0.00
+-0.29
+-0.29
+Meter Make/Meter Type
+490.00/490
+0.00
+1960000.01
+12/02/2022/07/02/2024
+Nigam Meter/
+Secure Meter Ltd. /HT-
+MTR
+Details of Charges for Current Cycle
+Description
+Amount (*)
+Details of Amount Payable
+Description
+Last Payment Details
+Amount (*)
+Amount(*)
+Fixed Charges
+159484.87
+Current Cycle Charges
+Energy Charges
+108694.25
+Arrears/Outstanding Dues
+278243.09
+-0.29
+Receipt No
+MMC/FC for Reconnection
+0.00
+Sundry Charges/Allowances
+3220.16/-0.29
+Receipt Date
+Mode of Payment
+285967.00
+782623355539
+20/04/2024
+Amount to cover MMC
+0.00
+Provisional Adjustment/BR Adj.
+FPPAS
+3812.88
+LPS Adjustment
+0.00
+-3219.87
+Previous Consumption Pattern
+Units
+Units
+Bill month
+MDI
+Status
+TDS/TCS
+0.00/0.00
+Adv. Security Deposit
+(KWH)
+(KVAH)
+0.00
+Amt*/Non Energy chrg
+Nov-2023
+5762.5
+5825
+22.1
+OK
+Excess Load Surcharge
+0.00
+Net Payable Amount
+Dec-2023
+5465
+5492.5
+17.6
+OK
+278243.00
+Capacitor Surcharge
+0.00
+On Or Before Due Date()
+Jan-2024
+9027.5
+9075
+26.3
+OK
+MSC/Green Energy
+0.00/0.00
+Surcharge(*)
+Feb-2024
+12360
+12380
+37.1
+OK
+4080.00
+Premium
+Line Service Charges
+Capacitor Service Charges
+Mar-2024
+9487.5
+9532.5
+30.8
+OK
+0.00
+Gross Amount Payable After
+282323.00
+Apr-2024
+8017.5
+8042.5
+23.8
+OK
+0.00
+Due Date(*)
+Solar Rebate /Prepaid
+PAN/TAN: /
+0.00/0.00/0.00
+Brief details of Sundry charges /allowances
+Rebate/Gaushala Rebate
+Govt. Subsidy/Battery Rbt
+Electricity Duty
+Municipal Tax / P Tax
+0.00/0.00
+811.25
+5439.84
+Transfer Adjustment from Over Payment ( )
+Transfer Adjustment from Over Payment ( )
+Transfer Adjustment from Over Payment ( )
+Date from which bill other than "OK"
+is being issued:
+Reason:
+Total Current Cycle
+Charges (*)
+DD to be drawn in favour of
+278243.09
+SDO G23-Farukh Nagar, DHBVN, FARUKH NAGAR
+Payment of this bill can be made online by logging on the
+Website:www.dhbvn.org.in at any time and at office counter
+on all working days during working hours i.e. 09:00AM to
+05:00PM.
+Grievance pertaining to this bill can be
+lodged with
+Important Information for consumers:
+This Bill be considered as a notice under section 56 of The Electricity Act 2003. Kindly pay the bill by
+due date. In case of default the connection is liable to be disconnected after 15 days of due date.
+*This is an interest security amount and interest on this security @6.75 % shall be paid for FY 2023-24.
+This bill does not confer any rights of ownership on the property where this connection exists.
+T&C shall apply.
+Address and Telephone Number(s) of the authorities relating to consumers grievances
+Address & Telephone number(s) of the
+For all types of
+complaints/billing information
+call at:
+
+Return JSON in this exact format:
+{
+  "invoice_number": null,
+  "consumer_name": null,
+  "consumer_number": null,
+  "meter_number": null,
+  "billing_period": null,
+  "previous_reading_date": null,
+  "current_reading_date": null,
+  "units_consumed": null,
+  "bill_amount": null,
+  "due_date": null,
+  "address": null,
+  "discom": null
+}
+
+
+================================================================================

@@ -1,0 +1,51 @@
+{
+  "stage": "Accuracy Evaluation",
+  "timestamp": "2025-12-19T00:31:53.137483",
+  "evaluation": {
+    "overall_accuracy": 40.0,
+    "correct_fields": 2,
+    "total_fields": 5,
+    "field_results": {
+      "invoice_number": {
+        "expected": "202405B52627256401",
+        "extracted": "202405052627256401",
+        "correct": false
+      },
+      "previous_reading_date": {
+        "expected": "03-05-2024",
+        "extracted": "03-05-2024",
+        "correct": true
+      },
+      "current_reading_date": {
+        "expected": "14-05-2024",
+        "extracted": "14-05-2024",
+        "correct": true
+      },
+      "meter_number": {
+        "expected": "B526272564",
+        "extracted": null,
+        "correct": false
+      },
+      "units_consumed": {
+        "expected": "330",
+        "extracted": "3.00",
+        "correct": false
+      },
+      "consumer_name": {
+        "expected": null,
+        "extracted": "HANDRAMMA WO C MANJUNATH",
+        "correct": false
+      },
+      "billing_period": {
+        "expected": null,
+        "extracted": null,
+        "correct": true
+      },
+      "due_date": {
+        "expected": null,
+        "extracted": "17-05-2024",
+        "correct": false
+      }
+    }
+  }
+}

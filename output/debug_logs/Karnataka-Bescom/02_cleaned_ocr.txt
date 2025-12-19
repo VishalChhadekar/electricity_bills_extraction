@@ -1,0 +1,90 @@
+================================================================================
+CLEANED OCR OUTPUT (Post-Processing)
+================================================================================
+
+Character Count: 1263
+Line Count: 79
+--------------------------------------------------------------------------------
+
+Full Text:
+--------------------------------------------------------------------------------
+| sforivlaci Schaʻridwaves dedi Sabbia
+S/ELECTRICITY BILL
+GSIN No 29AACCB1412G1Z5
+Duplicate. 1
+Q/o AEE¦É¡o } S4 KORAMANGALA
+Account Details
+excrevozioa{} RA No
+and Goal Act id
+ಮ ಓ ಸ೦ಕೇತ M A Coda
+bookb/Personal Detalls
+Bab 206]. Dvad/Name and Address
+YASMIN, NO 447,C KORMANGALA
+Notard Sadnb/Connection Details
+Tari
+bo, jatora Sanc Load
+4SEH5028
+6828682000
+14001502
+LTJA
+3KW+0HP
+Dear Dadd/Billing Delails
+Der gazda,Bill Period
+Oro
+Good/Muny. Dale
+De Foal Bill Ne
+15/04/2024 - 15/05/2024
+15/05/2024
+111202245150102
+selfabed/Consumption Detail
+Load pay Prev. Rdg.
+woldsakų Pras. Ady.
+apid & mox/Constant
+Consumption (Units)
+Average
+11967
+11813
+I
+154
+§ muda de Recorded MO
+1.32KW
+dido en ¢ of Power Factor
+1.0
+SoapConnecled Load
+0.0KW
+wette about Der" slog it for Consumed Units
+Dribbber/Fixed Charges (Unit, Rata, Amount)
+3.0 KW
+210.0
+Ich zber Energy Chargas (Unit, Rate, Aniuni)
+154 0
+8.0
+0.08
+630.00
+1232.00
+wocht om ebey/FPPCA Charges (Lk:il Rata, Am!)
+154.0
+Tax @00%
+12.32
+110.85
+Additional Charges
+& sqª clock; PF Penalty
+0.00
+etor do Er. LoadTAD Penalty
+0.00
+mlarent
+0.00
+13/Others
+0.00
+aður“ or B&¥¥ª/Debit or Credit
+0.00
+ed/Cur.Demand Payable
+* 1985.20
+LD/Arrear
+0.00
+madabout Payable
+a Do/Due Date
+* 1985.00
+29/05/2024
+6828682000#1885 15/05/2024 10:49 V11.8
+================================================================================

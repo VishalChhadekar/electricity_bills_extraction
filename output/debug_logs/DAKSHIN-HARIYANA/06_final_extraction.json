@@ -1,0 +1,20 @@
+{
+  "stage": "Final Extraction (Merged)",
+  "timestamp": "2025-12-19T00:31:05.146042",
+  "results": {
+    "invoice_number": "782622204383",
+    "consumer_name": null,
+    "consumer_number": "2110012UZT",
+    "meter_number": "X1670071",
+    "billing_period": "MAY/2024",
+    "previous_reading_date": "01/04/2024",
+    "current_reading_date": "01/05/2024",
+    "units_consumed": "8112.5",
+    "bill_amount": "278243.00",
+    "due_date": null,
+    "address": "TRANSPORT HUB, PATLI HAZIPUR TEH FARUKHNAGAR, IMT MANESAR, 122506, GURUGRAM, HR-122506, IND",
+    "discom": "DHBVN"
+  },
+  "fields_found": 10,
+  "total_fields": 12
+}
