@@ -1,13 +1,13 @@
 {
   "stage": "Final Extraction (Merged)",
-  "timestamp": "2025-12-19T00:31:30.731327",
+  "timestamp": "2025-12-19T16:53:58.369351",
   "results": {
-    "invoice_number": "202405299071901",
+    "invoice_number": "LT-3(a)-U",
     "consumer_name": "FATHIMATH JOURA",
     "consumer_number": "8006",
     "meter_number": "SL43682",
-    "billing_period": "06.05.2024",
-    "previous_reading_date": null,
+    "billing_period": null,
+    "previous_reading_date": "06-05-2024",
     "current_reading_date": "06.05.2024",
     "units_consumed": "321",
     "bill_amount": "4334.25",

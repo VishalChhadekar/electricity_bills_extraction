@@ -1,6 +1,6 @@
 {
   "filename": "Karnataka-Bescom.pdf",
-  "timestamp": "2025-12-19T00:32:04.368200",
+  "timestamp": "2025-12-19T16:53:48.306844",
   "stages": {
     "raw_ocr": {
       "char_count": 1263,
@@ -18,7 +18,7 @@
     "llm_prompt": {
       "model": "gpt-4o-mini",
       "prompt_length": 5736,
-      "timestamp": "2025-12-19T00:32:06.306148"
+      "timestamp": "2025-12-19T16:53:50.358448"
     },
     "llm_response": {
       "model": "gpt-4o-mini-2024-07-18",
@@ -27,7 +27,7 @@
         "completion_tokens": 144,
         "total_tokens": 2031
       },
-      "timestamp": "2025-12-19T00:32:11.154307"
+      "timestamp": "2025-12-19T16:53:53.780825"
     },
     "final_extraction": {
       "fields_found": 10,

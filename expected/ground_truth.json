@@ -16,21 +16,6 @@
   },
   {
     "id": 2,
-    "file_name": "Bihar.pdf",
-    "invoiceNumber": "20240423720982126 7",
-    "previousReadingDate": "15-MAR-24",
-    "presentReadingDate": "20-04-2024",
-    "meterReadings": [
-      {
-        "id": 1,
-        "meterNumber": "U326173",
-        "unitsConsumed": "536"
-      }
-    ],
-    "accuracy": ""
-  },
-  {
-    "id": 3,
     "file_name": "DAKSHIN-HARIYANA.pdf",
     "invoiceNumber": "782622204383",
     "previousReadingDate": "01/04/2024",
@@ -50,7 +35,7 @@
     "accuracy": ""
   },
   {
-    "id": 4,
+    "id": 3,
     "file_name": "Goregoan.pdf",
     "invoiceNumber": "100580813638",
     "previousReadingDate": "30-Mar-2024",
@@ -65,52 +50,7 @@
     "accuracy": ""
   },
   {
-    "id": 5,
-    "file_name": "Gulbarga-Karnataka.jpg",
-    "invoiceNumber": "202405B52627256401",
-    "previousReadingDate": "03-05-2024",
-    "presentReadingDate": "14-05-2024",
-    "meterReadings": [
-      {
-        "id": 1,
-        "meterNumber": "B526272564",
-        "unitsConsumed": "330"
-      }
-    ],
-    "accuracy": ""
-  },
-  {
-    "id": 6,
-    "file_name": "Hubli-Karnataka-english.jpg",
-    "invoiceNumber": "225802088708",
-    "previousReadingDate": "04-04-2024",
-    "presentReadingDate": "04-05-2024",
-    "meterReadings": [
-      {
-        "id": 1,
-        "meterNumber": "3848305770",
-        "unitsConsumed": "701"
-      }
-    ],
-    "accuracy": ""
-  },
-  {
-    "id": 7,
-    "file_name": "Hubli-Karnataka.jpg",
-    "invoiceNumber": "038900230205202401",
-    "previousReadingDate": "09/04/2024",
-    "presentReadingDate": "09/05/2024",
-    "meterReadings": [
-      {
-        "id": 1,
-        "meterNumber": "VMC161968",
-        "unitsConsumed": "846"
-      }
-    ],
-    "accuracy": ""
-  },
-  {
-    "id": 8,
+    "id": 4,
     "file_name": "Karnataka-Bescom.pdf",
     "invoiceNumber": "111202245150102",
     "previousReadingDate": "15/04/2024",
@@ -125,7 +65,7 @@
     "accuracy": ""
   },
   {
-    "id": 9,
+    "id":5,
     "file_name": "Maglore-Karnataka.jpg",
     "invoiceNumber": "202405299071901",
     "previousReadingDate": "",
@@ -141,7 +81,7 @@
     "accuracy": ""
   },
   {
-    "id": 10,
+    "id": 6,
     "file_name": "Maharastra.pdf",
     "invoiceNumber": "000002436874795",
     "previousReadingDate": "11-APR-24",
@@ -156,22 +96,7 @@
     "accuracy": ""
   },
   {
-    "id": 11,
-    "file_name": "PASHIMANCHAL-UTTAR-HARIYANA.jpg",
-    "invoiceNumber": "763338479224",
-    "previousReadingDate": "03-APR-2024",
-    "presentReadingDate": "04-MAY-2024",
-    "meterReadings": [
-      {
-        "id": 1,
-        "meterNumber": "9082529",
-        "unitsConsumed": "1296.7"
-      }
-    ],
-    "accuracy": ""
-  },
-  {
-    "id": 12,
+    "id": 7,
     "file_name": "pUNJAB.pdf",
     "invoiceNumber": "3007647081",
     "previousReadingDate": "11-MAR-2024",
@@ -186,52 +111,7 @@
     "accuracy": ""
   },
   {
-    "id": 13,
-    "file_name": "TPCODL-ORISSA.pdf",
-    "invoiceNumber": "2300935262",
-    "previousReadingDate": "19/11/2023",
-    "presentReadingDate": "21/12/2023",
-    "meterReadings": [
-      {
-        "id": 1,
-        "meterNumber": "TS2149729",
-        "unitsConsumed": "154"
-      }
-    ],
-    "accuracy": ""
-  },
-  {
-    "id": 14,
-    "file_name": "Uttar-Gujarat.pdf",
-    "invoiceNumber": "NA",
-    "previousReadingDate": "NA",
-    "presentReadingDate": "NA",
-    "meterReadings": [
-      {
-        "id": 1,
-        "meterNumber": "5A005581",
-        "unitsConsumed": "105850.000"
-      }
-    ],
-    "accuracy": ""
-  },
-  {
-    "id": 15,
-    "file_name": "Uttar-Hariyana.pdf",
-    "invoiceNumber": "110142107",
-    "previousReadingDate": "15-04-2024",
-    "presentReadingDate": "17-05-2024",
-    "meterReadings": [
-      {
-        "id": 1,
-        "meterNumber": "2111205UBL511016",
-        "unitsConsumed": "2133.69"
-      }
-    ],
-    "accuracy": ""
-  },
-  {
-    "id": 16,
+    "id": 8,
     "file_name": "Uttarpradesh-Purvanchal.pdf",
     "invoiceNumber": "019591568992",
     "previousReadingDate": "09-APR-24",
@@ -246,7 +126,7 @@
     "accuracy": ""
   },
   {
-    "id": 17,
+    "id": 9,
     "file_name": "Uttarpradesh.jpeg",
     "invoiceNumber": "1360965543",
     "previousReadingDate": "11-04-2024",
@@ -261,7 +141,7 @@
     "accuracy": ""
   },
   {
-    "id": 18,
+    "id": 10,
     "file_name": "Gulbarga-Karnataka-english.jpg",
     "invoiceNumber": "915562804157",
     "previousReadingDate": "01-04-2024",

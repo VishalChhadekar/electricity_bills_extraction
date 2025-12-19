@@ -1,6 +1,6 @@
 {
   "filename": "Gulbarga-Karnataka-english.jpg",
-  "timestamp": "2025-12-19T00:32:17.620749",
+  "timestamp": "2025-12-19T16:54:10.646889",
   "stages": {
     "raw_ocr": {
       "char_count": 1517,
@@ -18,7 +18,7 @@
     "llm_prompt": {
       "model": "gpt-4o-mini",
       "prompt_length": 5990,
-      "timestamp": "2025-12-19T00:32:18.898260"
+      "timestamp": "2025-12-19T16:54:12.041585"
     },
     "llm_response": {
       "model": "gpt-4o-mini-2024-07-18",
@@ -27,7 +27,7 @@
         "completion_tokens": 174,
         "total_tokens": 2094
       },
-      "timestamp": "2025-12-19T00:32:23.657511"
+      "timestamp": "2025-12-19T16:54:15.645983"
     },
     "final_extraction": {
       "fields_found": 12,

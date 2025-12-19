@@ -246,7 +246,7 @@ FIELD DESCRIPTIONS & COMMON LABELS:
    Common labels: "Consumer No", "Account No", "Customer No", "CA No", "Consumer Number", "खाता संख्या"
    
 4. meter_number: Electricity meter serial number (usually 6-10 digits, may have prefix)
-   Common labels: "Meter No", "Meter Number", "Meter Serial No", "MTR NO", "मीटर नंबर", "Meter S.No"
+   Common labels: "Meter No", "Meter Number", "Meter Serial No", "MTR NO", "मीटर नंबर", "Meter S.No", "RR No"
    
 5. billing_period: Billing period or bill month
    Common labels: "Billing Period", "Bill Month", "Period", "Bill For", "बिलिंग अवधि"

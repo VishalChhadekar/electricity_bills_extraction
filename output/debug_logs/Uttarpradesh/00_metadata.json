@@ -1,6 +1,6 @@
 {
   "filename": "Uttarpradesh.jpeg",
-  "timestamp": "2025-12-19T00:30:49.633489",
+  "timestamp": "2025-12-19T16:53:25.641773",
   "stages": {
     "raw_ocr": {
       "char_count": 186,
@@ -18,7 +18,7 @@
     "llm_prompt": {
       "model": "gpt-4o-mini",
       "prompt_length": 4659,
-      "timestamp": "2025-12-19T00:30:51.885746"
+      "timestamp": "2025-12-19T16:53:27.504641"
     },
     "llm_response": {
       "model": "gpt-4o-mini-2024-07-18",
@@ -27,7 +27,7 @@
         "completion_tokens": 126,
         "total_tokens": 1576
       },
-      "timestamp": "2025-12-19T00:30:56.660436"
+      "timestamp": "2025-12-19T16:53:30.373677"
     },
     "final_extraction": {
       "fields_found": 5,

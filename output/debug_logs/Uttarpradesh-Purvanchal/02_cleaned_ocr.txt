@@ -19,11 +19,10 @@ rxxxxxxxxxdey@flipkart.com
 बिल संख्या / Bill No
 019591568992
 बिल की तिथि / Bill Date
-बिल माह / Bill Month
-नेट बिल यूनिट / Net Billed Unit
 13-MAY-2024
 MAY-2024
-2659.85
+बिल माह / Bill Month
+नेट बिल यूनिट / Net Billed Unit
 टैरिफ / Tariff
 मीटर क्रम संख्या /Meter S. No
 00902171
@@ -56,6 +55,7 @@ Gross Amt
 Amount
 Subsidy
 Amount
+2659.85
 This bill will be construed as final notice under section 171 of Supply Code 2005. Supply can be disconnected at any date on non-payment of old dues.
 इस बिल को आपूर्ति संहिता 2005 की धारा 171 के तहत अंतिम नोटिस माना जाएगा। पुराने बकाया का भुगतान न करने पर किसी भी तिथि पर आपूर्ति काटी जा सकती है।
 Details

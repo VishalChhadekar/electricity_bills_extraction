@@ -1,19 +1,19 @@
 {
   "stage": "LLM Response",
-  "timestamp": "2025-12-19T00:31:30.729390",
+  "timestamp": "2025-12-19T16:53:58.364945",
   "model": "gpt-4o-mini-2024-07-18",
   "usage": {
     "prompt_tokens": 1873,
-    "completion_tokens": 129,
-    "total_tokens": 2002
+    "completion_tokens": 130,
+    "total_tokens": 2003
   },
   "response": {
-    "invoice_number": "202405299071901",
+    "invoice_number": "LT-3(a)-U",
     "consumer_name": "FATHIMATH JOURA",
     "consumer_number": "8006",
     "meter_number": "SL43682",
-    "billing_period": "06.05.2024",
-    "previous_reading_date": null,
+    "billing_period": null,
+    "previous_reading_date": "06-05-2024",
     "current_reading_date": "06.05.2024",
     "units_consumed": "321",
     "bill_amount": "4334.25",

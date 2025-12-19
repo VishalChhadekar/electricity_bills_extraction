@@ -1,6 +1,6 @@
 {
   "filename": "Uttarpradesh-Purvanchal.pdf",
-  "timestamp": "2025-12-19T00:32:29.633163",
+  "timestamp": "2025-12-19T16:53:36.094193",
   "stages": {
     "raw_ocr": {
       "char_count": 4080,
@@ -18,7 +18,7 @@
     "llm_prompt": {
       "model": "gpt-4o-mini",
       "prompt_length": 8553,
-      "timestamp": "2025-12-19T00:32:31.688641"
+      "timestamp": "2025-12-19T16:53:38.619873"
     },
     "llm_response": {
       "model": "gpt-4o-mini-2024-07-18",
@@ -27,7 +27,7 @@
         "completion_tokens": 151,
         "total_tokens": 2945
       },
-      "timestamp": "2025-12-19T00:32:35.293676"
+      "timestamp": "2025-12-19T16:53:42.810754"
     },
     "final_extraction": {
       "fields_found": 10,
