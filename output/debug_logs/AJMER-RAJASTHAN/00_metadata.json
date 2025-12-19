@@ -1,6 +1,6 @@
 {
   "filename": "AJMER-RAJASTHAN.pdf",
-  "timestamp": "2025-12-19T00:31:30.742625",
+  "timestamp": "2025-12-19T16:53:42.821191",
   "stages": {
     "raw_ocr": {
       "char_count": 2581,
@@ -18,7 +18,7 @@
     "llm_prompt": {
       "model": "gpt-4o-mini",
       "prompt_length": 7054,
-      "timestamp": "2025-12-19T00:31:32.575492"
+      "timestamp": "2025-12-19T16:53:44.848090"
     },
     "llm_response": {
       "model": "gpt-4o-mini-2024-07-18",
@@ -27,7 +27,7 @@
         "completion_tokens": 147,
         "total_tokens": 2376
       },
-      "timestamp": "2025-12-19T00:31:37.272575"
+      "timestamp": "2025-12-19T16:53:48.286145"
     },
     "final_extraction": {
       "fields_found": 11,

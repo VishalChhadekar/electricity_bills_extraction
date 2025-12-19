@@ -37,20 +37,20 @@ def validate_credentials():
     
     # Check Google Cloud credentials
     if not GOOGLE_APPLICATION_CREDENTIALS:
-        errors.append("❌ GOOGLE_APPLICATION_CREDENTIALS not set")
+        errors.append(" GOOGLE_APPLICATION_CREDENTIALS not set")
     else:
         # Check if file exists
         creds_path = PROJECT_ROOT / GOOGLE_APPLICATION_CREDENTIALS
         if not creds_path.exists():
-            errors.append(f"❌ Google credentials file not found: {creds_path}")
+            errors.append(f" Google credentials file not found: {creds_path}")
         else:
             print(f"✓ Google Cloud credentials found: {creds_path}")
     
     # Check OpenAI API key
     if not OPENAI_API_KEY:
-        errors.append("❌ OPENAI_API_KEY not set")
+        errors.append(" OPENAI_API_KEY not set")
     elif OPENAI_API_KEY == "your-openai-api-key-here":
-        errors.append("❌ OPENAI_API_KEY is still set to placeholder value")
+        errors.append(" OPENAI_API_KEY is still set to placeholder value")
     else:
         print(f"✓ OpenAI API key configured")
     

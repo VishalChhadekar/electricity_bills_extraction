@@ -1,6 +1,6 @@
 {
   "filename": "pUNJAB.pdf",
-  "timestamp": "2025-12-19T00:31:57.097491",
+  "timestamp": "2025-12-19T16:53:30.397545",
   "stages": {
     "raw_ocr": {
       "char_count": 2112,
@@ -18,7 +18,7 @@
     "llm_prompt": {
       "model": "gpt-4o-mini",
       "prompt_length": 6585,
-      "timestamp": "2025-12-19T00:31:59.784561"
+      "timestamp": "2025-12-19T16:53:33.014036"
     },
     "llm_response": {
       "model": "gpt-4o-mini-2024-07-18",
@@ -27,7 +27,7 @@
         "completion_tokens": 131,
         "total_tokens": 2855
       },
-      "timestamp": "2025-12-19T00:32:04.327018"
+      "timestamp": "2025-12-19T16:53:36.077996"
     },
     "final_extraction": {
       "fields_found": 7,

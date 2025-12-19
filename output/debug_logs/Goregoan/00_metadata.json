@@ -1,6 +1,6 @@
 {
   "filename": "Goregoan.pdf",
-  "timestamp": "2025-12-19T00:31:05.176945",
+  "timestamp": "2025-12-19T16:53:19.233301",
   "stages": {
     "raw_ocr": {
       "char_count": 2525,
@@ -18,7 +18,7 @@
     "llm_prompt": {
       "model": "gpt-4o-mini",
       "prompt_length": 6998,
-      "timestamp": "2025-12-19T00:31:08.063188"
+      "timestamp": "2025-12-19T16:53:21.689928"
     },
     "llm_response": {
       "model": "gpt-4o-mini-2024-07-18",
@@ -27,7 +27,7 @@
         "completion_tokens": 158,
         "total_tokens": 2309
       },
-      "timestamp": "2025-12-19T00:31:12.604963"
+      "timestamp": "2025-12-19T16:53:25.607248"
     },
     "final_extraction": {
       "fields_found": 11,

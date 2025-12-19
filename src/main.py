@@ -160,7 +160,7 @@ def main():
     
     is_valid, errors = validate_credentials()
     if not is_valid:
-        print("\n❌ Configuration errors found:\n")
+        print("\n Configuration errors found:\n")
         for error in errors:
             print(f"  {error}")
         print("\nPlease check your .env file and ensure all credentials are set.")
@@ -187,7 +187,7 @@ def main():
     input_files = list(set(input_files))
     
     if not input_files:
-        print("❌ Error: No input files found in input/ directory")
+        print(" Error: No input files found in input/ directory")
         print("Supported formats: PDF, JPG, JPEG, PNG")
         print(f"Please add files to: {input_dir}")
         sys.exit(1)
@@ -284,9 +284,9 @@ def main():
         if 'accuracy' in summary:
             print(f"   Accuracy: {summary['accuracy']}% ({summary['correct_fields']}/{summary['total_fields']} fields)")
         elif 'error' in summary:
-            print(f"   Status: ❌ {summary['status']} - {summary['error']}")
+            print(f"   Status:  {summary['status']} - {summary['error']}")
         else:
-            print(f"   Status: ✓ {summary['status']}")
+            print(f"   Status:  {summary['status']}")
         print()
     
     print(f"{'='*60}")

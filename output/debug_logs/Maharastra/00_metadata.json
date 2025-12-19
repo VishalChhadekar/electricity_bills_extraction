@@ -1,6 +1,6 @@
 {
   "filename": "Maharastra.pdf",
-  "timestamp": "2025-12-19T00:32:11.167272",
+  "timestamp": "2025-12-19T16:53:58.389586",
   "stages": {
     "raw_ocr": {
       "char_count": 2251,
@@ -18,7 +18,7 @@
     "llm_prompt": {
       "model": "gpt-4o-mini",
       "prompt_length": 6724,
-      "timestamp": "2025-12-19T00:32:13.438652"
+      "timestamp": "2025-12-19T16:54:01.169095"
     },
     "llm_response": {
       "model": "gpt-4o-mini-2024-07-18",
@@ -27,7 +27,7 @@
         "completion_tokens": 154,
         "total_tokens": 2485
       },
-      "timestamp": "2025-12-19T00:32:17.608694"
+      "timestamp": "2025-12-19T16:54:04.752838"
     },
     "final_extraction": {
       "fields_found": 12,

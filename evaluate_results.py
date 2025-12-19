@@ -265,7 +265,7 @@ def main():
     
     # Load ground truth
     if not ground_truth_path.exists():
-        print(f"❌ Error: Ground truth file not found at {ground_truth_path}")
+        print(f" Error: Ground truth file not found at {ground_truth_path}")
         return
     
     print(f"Loading ground truth from: {ground_truth_path}")

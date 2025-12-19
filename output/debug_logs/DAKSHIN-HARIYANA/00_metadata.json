@@ -1,6 +1,6 @@
 {
   "filename": "DAKSHIN-HARIYANA.pdf",
-  "timestamp": "2025-12-19T00:30:56.693167",
+  "timestamp": "2025-12-19T16:54:04.776058",
   "stages": {
     "raw_ocr": {
       "char_count": 4067,
@@ -18,7 +18,7 @@
     "llm_prompt": {
       "model": "gpt-4o-mini",
       "prompt_length": 8540,
-      "timestamp": "2025-12-19T00:30:59.355927"
+      "timestamp": "2025-12-19T16:54:07.258383"
     },
     "llm_response": {
       "model": "gpt-4o-mini-2024-07-18",
@@ -27,7 +27,7 @@
         "completion_tokens": 170,
         "total_tokens": 2972
       },
-      "timestamp": "2025-12-19T00:31:05.142809"
+      "timestamp": "2025-12-19T16:54:10.621249"
     },
     "final_extraction": {
       "fields_found": 10,
