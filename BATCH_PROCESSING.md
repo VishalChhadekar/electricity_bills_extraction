@@ -218,7 +218,7 @@ If one file fails, others continue processing:
    Accuracy: 90.91% (10/11 fields)
 
 2. corrupted_bill.pdf
-   Status: ❌ Failed - Unable to decode image
+   Status: Failed - Unable to decode image
 
 3. another_bill.jpg
    Accuracy: 81.82% (9/11 fields)
